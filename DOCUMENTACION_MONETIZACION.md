@@ -1,568 +1,565 @@
-# LexHouse — Documentación de Monetización
-### Portal Inmobiliario con Inteligencia Artificial
+# Lex House AI — Documentación de Monetización
+### Portal de IA y Automatizaciones para Corredores de Propiedades en Chile
 
-> **Versión:** 1.0 · **Fecha:** Junio 2026 · **Audiencia:** Nuevos usuarios, inversores, equipo de ventas
+> **Versión:** 2.0 · **Fecha:** Junio 2026 · **Empresa:** Lex House Intelligence Inc.  
+> **Sitio web:** [www.lexhouse-ai.com](https://www.lexhouse-ai.com)  
+> **Audiencia:** Nuevos usuarios, inversores, equipo de ventas
 
 ---
 
 ## Índice
 
-1. [¿Qué es LexHouse?](#1-qué-es-lexhouse)
-2. [Herramientas y Módulos](#2-herramientas-y-módulos)
-3. [Cuánto Tiempo Ahorra](#3-cuánto-tiempo-ahorra)
-4. [Retorno de Inversión (ROI)](#4-retorno-de-inversión-roi)
-5. [Beneficios Clave](#5-beneficios-clave)
-6. [Casos de Uso Reales](#6-casos-de-uso-reales)
-7. [Modelos de Precios](#7-modelos-de-precios)
-8. [Guión para Video Explicativo](#8-guión-para-video-explicativo)
-9. [Preguntas Frecuentes (FAQ)](#9-preguntas-frecuentes-faq)
+1. [¿Qué es Lex House AI?](#1-qué-es-lex-house-ai)
+2. [Stack Tecnológico](#2-stack-tecnológico)
+3. [Los 12 Módulos IA](#3-los-12-módulos-ia)
+4. [Cuánto Tiempo Ahorra](#4-cuánto-tiempo-ahorra)
+5. [Retorno de Inversión (ROI)](#5-retorno-de-inversión-roi)
+6. [Beneficios Clave](#6-beneficios-clave)
+7. [Casos de Uso Reales](#7-casos-de-uso-reales)
+8. [Modelos de Precios](#8-modelos-de-precios)
+9. [Guión para Video Explicativo](#9-guión-para-video-explicativo)
+10. [Preguntas Frecuentes (FAQ)](#10-preguntas-frecuentes-faq)
 
 ---
 
-## 1. ¿Qué es LexHouse?
+## 1. ¿Qué es Lex House AI?
 
-LexHouse es un **portal inmobiliario inteligente** que combina automatización avanzada, inteligencia artificial conversacional y marketing digital en una sola plataforma. Fue diseñado para que agentes, corredores y empresas inmobiliarias puedan **captar más leads, cerrar más ventas y operar con menos esfuerzo manual**.
+**Lex House AI** es la primera plataforma SaaS chilena diseñada **exclusivamente para corredores de propiedades**. Reúne **12 módulos de IA y automatización** para captar, calificar, gestionar y cerrar operaciones inmobiliarias sin aumentar el equipo humano.
 
-### Problema que resuelve
+Es tu **equipo IA 24/7**: agentes WhatsApp y voz, CRM, Cazador de leads, Contratos IA y Publicador a más de 12 portales — todo en una sola plataforma.
 
-| Sin LexHouse | Con LexHouse |
+### El problema que resuelve
+
+| Sin Lex House AI | Con Lex House AI |
 |---|---|
-| Responder leads manualmente (15+ horas de demora promedio) | Respuesta automática en menos de 1 minuto, 24/7 |
-| Ingresar datos a mano en CRM | Captura y sincronización automática |
-| Seguimientos manuales por email | Campañas automatizadas y personalizadas |
-| Reportes semanales hechos a mano | Reportes generados automáticamente |
-| Perder leads por falta de seguimiento | Flujos de reactivación automáticos |
+| Leads sin respuesta por horas (o días) | Respuesta automática en segundos, 24/7 |
+| Publicar a mano en cada portal | Publicación masiva a +12 portales con 1 clic |
+| Contratos revisados sin asesoría | Análisis IA de contratos al instante |
+| Sin datos de valoración confiable | Valuación inteligente en tiempo real |
+| Videos de propiedades caros y lentos | Reels y Stories IA listos en minutos |
+| Leads perdidos sin seguimiento | Cazador de leads activo 24/7 |
+| CRM separado del resto del flujo | CRM inmobiliario integrado con todo |
+| Marketing difícil de medir | Dashboard Enterprise con métricas en tiempo real |
 
 ---
 
-## 2. Herramientas y Módulos
+## 2. Stack Tecnológico
 
-### 2.1 Base de Datos Inteligente — Supabase
+Lex House AI está construida sobre tecnologías de vanguardia que garantizan velocidad, seguridad y escala:
+
+| Tecnología | Función en la plataforma |
+|---|---|
+| **Supabase** | Base de datos, autenticación, almacenamiento seguro y edge functions |
+| **OpenAI** | Motor de IA conversacional y análisis de contratos |
+| **Google Gemini** | Análisis multimodal de imágenes y documentos |
+| **Claude (Anthropic)** | Redacción avanzada y razonamiento legal |
+| **React + TypeScript** | Interfaz rápida y robusta |
+| **Vercel** | Despliegue global con baja latencia |
+| **AES-256-GCM** | Cifrado militar de archivos (cliente → servidor) |
+
+**Seguridad:**
+- Cifrado AES-256-GCM con PBKDF2 (600,000 iteraciones, estándar OWASP)
+- Los archivos se cifran en el navegador **antes** de subirse al servidor
+- Row Level Security (RLS) activo en Supabase — cada usuario accede solo a sus datos
+- Políticas `security_invoker=on` en todas las vistas de base de datos
+
+---
+
+## 3. Los 12 Módulos IA
+
+### Módulo 1 — Agente WhatsApp IA 24/7
+**Ruta:** `/app/ai-services`  
+**Badge:** PRO
 
 **¿Qué hace?**
-El corazón operativo del portal. Almacena y gestiona toda la información de propiedades, leads, usuarios y transacciones con seguridad de nivel empresarial.
+Responde automáticamente mensajes de WhatsApp las 24 horas. Atiende consultas, agenda visitas, califica leads y los crea en el CRM sin intervención humana.
+
+**Beneficios clave:**
+- Respuesta en segundos (vs. horas o días sin el agente)
+- Español chileno natural, sin respuestas robóticas
+- Lead creado automáticamente en el CRM tras cada conversación
+- Agenda visitas directamente en tu calendario
+
+**Escenario real:**
+> Un domingo a las 22:00 alguien pregunta por un depto en Las Condes. LeyIA responde, confirma disponibilidad, agenda visita para el martes y te avisa al instante.
+
+---
+
+### Módulo 2 — Agente de Voz IA Inbound (Recepción 24/7)
+**Ruta:** `/app/ai-services`  
+**Precio:** 2.5 UF / mes  
+**Badge:** PRO
+
+**¿Qué hace?**
+Atiende llamadas telefónicas entrantes con voz humana realista. Responde FAQs, agenda visitas automáticamente y sincroniza con tu calendario.
 
 **Funciones incluidas:**
-- Registro y autenticación de usuarios (agentes, compradores, arrendatarios)
-- Seguridad Row Level Security (RLS): cada usuario ve solo sus datos
-- Base de datos en tiempo real — los cambios se reflejan instantáneamente
-- Almacenamiento de documentos, contratos e imágenes de propiedades
-- Búsqueda avanzada de propiedades por filtros múltiples (precio, zona, metros cuadrados, etc.)
-- Historial completo de interacciones por lead
+- Voz humana realista en español chileno
+- Manejo de objeciones frecuentes
+- Sync con calendario
+- Resumen de la llamada + lead creado automático
 
-**Impacto directo:**
-- Elimina la necesidad de hojas de cálculo manuales
-- Reduce errores de datos en un 95%
-- Acceso desde cualquier dispositivo, en tiempo real
+**Impacto:**
+- Cero llamadas perdidas, incluso fuera del horario laboral
+- El 65% de consultas se resuelven sin intervención humana
 
 ---
 
-### 2.2 Motor de Automatización — n8n
+### Módulo 3 — Agente de Voz IA Outbound — Cazador de Leads
+**Ruta:** `/app/cazador-leads`  
+**Badge:** ENTERPRISE
 
 **¿Qué hace?**
-El "sistema nervioso" del portal. Conecta todas las herramientas entre sí y ejecuta flujos de trabajo automáticamente sin intervención humana.
-
-**Flujos automatizados incluidos:**
-
-| Flujo | Trigger | Acción Automática |
-|---|---|---|
-| **Captura de Lead** | Formulario enviado | Guardar en DB → Email bienvenida → Notificar agente |
-| **Seguimiento** | Lead sin respuesta 24h | Email de seguimiento personalizado |
-| **Reactivación** | Usuario inactivo 30 días | Secuencia de 3 emails + notificación |
-| **Asignación** | Nuevo lead ingresa | Asignar al agente correcto según zona/tipo |
-| **Reporte semanal** | Cada lunes 8am | Generar y enviar resumen de métricas |
-| **Actualización de listings** | Propiedad modificada | Sincronizar con portales externos |
-| **Alerta de precio** | Precio baja en propiedad buscada | Email automático al lead interesado |
-| **Firma de contrato** | Documento firmado | Notificación, archivado, inicio de proceso |
-
-**Impacto directo:**
-- Automatiza más del 85% de tareas repetitivas
-- ROI del 312% en los primeros 90 días de implementación *(Fuente: n8n case studies)*
-- Reducción del 30-75% en tiempo de procesamiento de tareas administrativas
-
----
-
-### 2.3 Asistente de IA Conversacional
-
-**¿Qué hace?**
-Un agente virtual inteligente que atiende leads y clientes las 24 horas, los 7 días de la semana. Responde preguntas, califica prospectos, agenda visitas y escala casos complejos al agente humano.
-
-**Capacidades:**
-- Respuesta instantánea a consultas sobre propiedades (precio, ubicación, disponibilidad)
-- Calificación automática de leads (¿tiene intención de compra? ¿en qué plazo? ¿presupuesto?)
-- Agenda de visitas integrada
-- Multicanal: funciona en web, WhatsApp, email
-- Escalamiento inteligente: detecta cuándo un humano debe intervenir
-- Historial de conversación guardado en la base de datos
-
-**Dato crítico de la industria:**
-> El agente inmobiliario promedio tarda **más de 15 horas** en responder un lead. Un lead respondido en los primeros **5 minutos** tiene **21 veces más probabilidad** de convertirse en venta. *(Harvard Business Review)*
-
-LexHouse responde en **menos de 60 segundos**, las 24 horas del día.
-
-**Impacto directo:**
-- +300% de aumento en leads calificados *(NextAutomation, 2025)*
-- +40% en tasa de conversión lead → visita
-- 65% de consultas resueltas sin intervención humana
-- Reducción del 60% en costos de atención al cliente
-
----
-
-### 2.4 Sistema de Email Marketing Automatizado
-
-**¿Qué hace?**
-Motor de comunicación que envía el mensaje correcto, a la persona correcta, en el momento exacto. Completamente automatizado y personalizado.
+Llama activamente a bases de prospectos, califica su intención de compra/arriendo y programa reuniones con los agentes solo para los leads "calientes".
 
 **Funciones incluidas:**
-- **Campañas de bienvenida:** secuencia automática para nuevos registros
-- **Nurturing de leads:** educación progresiva según etapa del funnel
-- **Reactivación:** recupera usuarios inactivos con ofertas personalizadas
-- **Alertas de propiedades:** notifica cuando aparece una propiedad que coincide con la búsqueda del cliente
-- **Email de cierre:** seguimiento post-visita y facilitación de la decisión
-- **Reportes de mercado:** contenido de valor para mantener top-of-mind
-- **Segmentación avanzada:** por zona, tipo de propiedad, presupuesto, etapa en el proceso
-
-**Benchmarks del sector:**
-- ROI del email marketing: **$42 por cada $1 invertido** (promedio industria)
-- Los emails automatizados generan **320% más ingresos** que los enviados manualmente
-- Empresas con automatización de marketing ven **451% más leads calificados**
-- Tasa de apertura en real estate: **33.75%** (vs 21% de promedio general)
-- Campañas hipersegmentadas: tasas de apertura de **25-40%**
+- Llamadas outbound automatizadas
+- Precalificación con preguntas inteligentes (presupuesto, zona, plazo)
+- Escalamiento al agente solo cuando el lead está calificado
+- Auditoría automática RLS para proteger datos de cada corredor
 
 ---
 
-### 2.5 Extractor e Integrador de Datos
+### Módulo 4 — Precalificación Inteligente de Leads
+**Disponible en:** Growth + Enterprise
 
 **¿Qué hace?**
-Herramienta de inteligencia de mercado que recopila, procesa y presenta datos del mercado inmobiliario automáticamente.
+Analiza automáticamente cada lead entrante y lo clasifica según su intención real de compra o arriendo, presupuesto estimado y urgencia.
 
-**Funciones incluidas:**
-- Scraping de listados de portales competidores y fuentes públicas
-- Generación automática de reportes de mercado (precios por zona, tendencias)
-- Integración con fuentes de datos externas
-- Exportación en formatos útiles (PDF, Excel, dashboard)
-- Detección de oportunidades: propiedades subvaloradas, zonas en crecimiento
-- Monitoreo de precios de la competencia
-
-**Impacto directo:**
-- Ahorro de 40-50 horas/mes en investigación de mercado manual
-- Decisiones basadas en datos, no en intuición
-- Ventaja competitiva: datos que la competencia no tiene
+**Beneficios:**
+- Los agentes reciben solo leads realmente interesados
+- Ahorra horas de conversaciones con prospectos sin intención real
+- Datos enriquecidos en el CRM desde el primer contacto
 
 ---
 
-### 2.6 Asesor Legal IA (Módulo LegalAdvisor)
+### Módulo 5 — CRM Inmobiliario
+**Ruta:** `/app/mis-negocios`  
+**Badge:** PRO
 
 **¿Qué hace?**
-Integración con el sistema de IA legal especializada en bienes raíces. Responde preguntas legales frecuentes, revisa contratos, y alerta sobre riesgos.
+Sistema de gestión de negocios diseñado específicamente para el flujo inmobiliario chileno. Centraliza leads, propiedades, ofertas y visitas en un solo lugar.
 
 **Funciones incluidas:**
-- Consultas legales básicas automatizadas (24/7)
-- Revisión preliminar de contratos de compraventa y arrendamiento
-- Alertas sobre cláusulas problemáticas
-- Biblioteca de documentos legales estándar
-- Escalamiento a asesor humano cuando es necesario
-
-**Valor para el cliente:**
-- Acceso a asesoría legal sin pagar honorarios por consulta básica
-- Transacciones más seguras
-- Reducción de disputas post-venta
+- Tabla de ofertas por propiedad
+- Gestión de tareas por negocio
+- Historial completo de interacciones
+- Agendamiento automático de visitas desde `/app/agenda-visitas`
+- Solicitudes de arriendo centralizadas
+- Integración total con todos los módulos IA
 
 ---
 
-## 3. Cuánto Tiempo Ahorra
+### Módulo 6 — Publicador Masivo a +12 Portales
+**Ruta:** `/app/publicador-masivo`  
+**Badge:** NEW IA
 
-### Cálculo de Horas Ahorradas por Semana
+**¿Qué hace?**
+Publica una propiedad simultáneamente en más de 12 portales inmobiliarios con un solo clic. Elimina el proceso manual de publicar una a una.
 
-| Tarea | Tiempo Manual | Con LexHouse | Ahorro |
+**Funciones incluidas:**
+- Publicación simultánea en +12 portales
+- Optimización automática de descripción y título por portal
+- Sincronización de precios y disponibilidad
+- Gestión centralizada de todas las publicaciones
+
+**Impacto:**
+- De 3-4 horas de publicación manual → 5 minutos con IA
+- Mayor exposición = más leads entrantes
+
+---
+
+### Módulo 7 — Marketing Enterprise
+**Ruta:** `/app/marketing-enterprise`  
+**Badge:** PRO
+
+**¿Qué hace?**
+Motor de marketing digital completo con Email + WhatsApp IA en una sola campaña. Fusiona campañas de correo masivo con un agente IA de WhatsApp.
+
+**Funciones incluidas:**
+- Dashboard con métricas en tiempo real
+- Campañas segmentadas por zona, tipo de propiedad, perfil de comprador
+- Visualización por barras, fechas y comparativos
+- Email marketing masivo integrado con seguimiento de apertura y clicks
+- Fusión Email + WhatsApp en el mismo flujo de campaña
+
+---
+
+### Módulo 8 — Reels & Stories IA
+**Ruta:** `/app/reels`  
+**Badge:** NEW IA
+
+**¿Qué hace?**
+Genera automáticamente videos verticales 9:16 con tus propiedades, listos para Instagram y TikTok.
+
+**Proceso:**
+1. Seleccionas una propiedad
+2. Eliges plantilla cinematográfica
+3. La IA arma el reel con transiciones, música, overlays de precio y CTA
+4. Descárgalo o publícalo directo desde la plataforma
+
+**Impacto:**
+- Videos profesionales en minutos (vs. horas con edición manual)
+- Mayor engagement en redes sociales = más leads
+
+---
+
+### Módulo 9 — Valuación Inteligente
+**Ruta:** `/app/valuacion-inteligente`
+
+**¿Qué hace?**
+Valúa propiedades en tiempo real usando datos de mercado, ubicación, características y transacciones comparables.
+
+**Beneficios:**
+- Argumentos objetivos para negociación con mandantes y compradores
+- Datos actualizados del mercado chileno
+- Informes de valoración exportables para presentar a clientes
+
+---
+
+### Módulo 10 — Contrato X-Ray (Análisis IA de Contratos)
+**Ruta:** `/app/contractxray`
+
+**¿Qué hace?**
+Analiza contratos inmobiliarios con IA. Detecta cláusulas problemáticas, riesgos legales y puntos de negociación antes de firmar.
+
+**Funciones incluidas:**
+- Subida y análisis de contratos en segundos
+- Detección de cláusulas riesgosas o inusuales
+- Chat con el contrato: pregunta sobre cualquier punto y la IA responde
+- Historial de análisis guardado por operación
+
+---
+
+### Módulo 11 — Perfil de Corredor con Verificación RUT
+**Ruta:** Marketplace público
+
+**¿Qué hace?**
+Perfil público verificado que genera confianza en compradores y arrendatarios desde el primer contacto.
+
+**Funciones incluidas:**
+- Verificación de RUT
+- Ficha completa por propiedad
+- Historial de propiedades cerradas
+- Reseñas y métricas reales de clientes
+- Enlace compartible optimizado para WhatsApp, Facebook y Twitter
+
+**Ejemplo real:**
+> Un cliente busca depto en Providencia, encuentra tu listado y en 1 click ve tu perfil completo: 4 años de experiencia, 87 propiedades cerradas, RUT validado y reseñas reales. Te contacta con confianza.
+
+---
+
+### Módulo 12 — Torre de Control (Panel Administrativo)
+**Ruta:** `/admin/torre-control`  
+**Acceso:** Admin
+
+**¿Qué hace?**
+Panel central de monitoreo y gestión de toda la operación: ingresos, solicitudes de arriendo, agenda de visitas y supervisión de agentes.
+
+**Secciones:**
+- Dashboard de ingresos (`/admin/ingresos`)
+- Agenda de visitas centralizada
+- Solicitudes de arriendo
+- Panel SuperAdmin para gestión de usuarios y suscripciones
+
+---
+
+## 4. Cuánto Tiempo Ahorra
+
+### Cálculo por tarea semanal — Corredor Individual
+
+| Tarea | Sin Lex House AI | Con Lex House AI | Ahorro |
 |---|---|---|---|
-| Responder leads nuevos | 3 h/semana | 0 h (automático) | **3 h** |
-| Seguimientos y nurturing | 5 h/semana | 30 min/semana | **4.5 h** |
-| Actualizar CRM y base de datos | 4 h/semana | 15 min/semana | **3.75 h** |
-| Crear y enviar reportes | 3 h/semana | 0 h (automático) | **3 h** |
-| Investigación de mercado | 4 h/semana | 1 h/semana | **3 h** |
-| Crear contenido de email | 2 h/semana | 30 min/semana | **1.5 h** |
-| Reactivar leads fríos | 2 h/semana | 0 h (automático) | **2 h** |
-| Coordinación y asignación de leads | 1.5 h/semana | 0 h (automático) | **1.5 h** |
-| **TOTAL** | **24.5 h/semana** | **2.25 h/semana** | **22.25 h ahorradas/semana** |
+| Responder consultas WhatsApp/llamadas | 4 h/semana | 0 h (Módulos 1-2) | **4 h** |
+| Publicar propiedades en portales | 3 h/semana | 15 min (Módulo 6) | **2.75 h** |
+| Crear videos/reels para redes | 3 h/semana | 20 min (Módulo 8) | **2.67 h** |
+| Revisar y analizar contratos | 2 h/semana | 15 min (Módulo 10) | **1.75 h** |
+| Calificación manual de leads | 3 h/semana | 0 h (Módulos 3-4) | **3 h** |
+| Ingresar datos al CRM | 2 h/semana | 0 h (automático) | **2 h** |
+| Campañas de email/WhatsApp | 2 h/semana | 30 min (Módulo 7) | **1.5 h** |
+| Valorar propiedades para mandantes | 1.5 h/semana | 15 min (Módulo 9) | **1.25 h** |
+| **TOTAL** | **20.5 h/semana** | **1.58 h/semana** | **~19 h ahorradas/semana** |
 
-### En números reales
+### En números concretos
 
 ```
-Un agente inmobiliario promedio ahorra con LexHouse:
+Un corredor ahorra con Lex House AI:
 
-  Por semana:    22 horas
-  Por mes:       89 horas
-  Por año:     1,067 horas  →  equivale a 133 días laborales
+  Por semana:    ~19 horas
+  Por mes:       ~76 horas  →  casi 2 semanas laborales completas
+  Por año:      ~912 horas  →  114 días laborales
 
-Si el valor hora del agente es $25 USD/hora:
-  Ahorro anual en tiempo:  $26,675 USD
+Si el valor hora del corredor es $20,000 CLP/hora:
+  Ahorro anual en tiempo:  ~$18,240,000 CLP (~$19,000 USD)
 ```
 
-> Fuentes: NextAutomation (2025), Ascendix Research, Harvard Business Review, n8n case studies
+> Fuentes: NextAutomation (2025), Harvard Business Review, n8n case studies
 
 ---
 
-## 4. Retorno de Inversión (ROI)
+## 5. Retorno de Inversión (ROI)
 
-### Escenario Tipo: Agente Inmobiliario Individual
+### Escenario: Corredor Individual — Plan Growth
 
-**Inversión mensual en LexHouse:** $149 USD/mes (plan profesional)
+**Inversión mensual en Lex House AI:** (precio del plan Growth)
 
-| Métrica | Sin LexHouse | Con LexHouse | Diferencia |
+| Métrica | Sin Lex House AI | Con Lex House AI | Diferencia |
 |---|---|---|---|
-| Leads captados/mes | 20 | 60 | +200% |
-| Tasa de conversión lead→visita | 10% | 18% | +80% |
-| Visitas programadas/mes | 2 | 11 | +450% |
-| Tasa de cierre (visita→venta) | 20% | 25% | +25% |
-| Ventas cerradas/mes | 0.4 | 2.7 | +575% |
-| Comisión promedio/venta | $2,000 USD | $2,000 USD | — |
-| **Ingresos mensuales** | **$800 USD** | **$5,400 USD** | **+$4,600 USD** |
+| Leads captados/mes | 15 | 50+ | +233% |
+| Leads atendidos a tiempo (<5 min) | 2 (13%) | 50 (100%) | +2,400% |
+| Tasa conversión lead→visita | 8% | 20% | +150% |
+| Visitas programadas/mes | 1–2 | 10 | +400% |
+| Propiedades publicadas/mes | 3–4 | 10+ (en 12 portales) | +650% de exposición |
+| Horas semanales en admin | 20 h | 1.5 h | -93% |
 
-**ROI mensual:**
+**ROI en comisiones:**
+
 ```
-Inversión:     $149 USD
-Ingreso extra: $4,600 USD
-ROI:           3,087%  →  cada $1 invertido retorna $31
+Sin Lex House AI:
+  1–2 visitas/mes × 15% de cierre = 0.3 ventas/mes
+  Comisión promedio: $1,500,000 CLP
+  Ingreso mensual: ~$450,000 CLP
+
+Con Lex House AI:
+  10 visitas/mes × 25% de cierre = 2.5 ventas/mes
+  Comisión promedio: $1,500,000 CLP
+  Ingreso mensual: ~$3,750,000 CLP
+
+Diferencia mensual:  +$3,300,000 CLP
 ```
 
-**Payback period:** El sistema se paga en el primer día del mes.
+> Fuentes: NextAutomation (2025), Artsmart AI (2025), Crescendo AI (2026)
 
 ---
 
-### Escenario Tipo: Agencia Inmobiliaria (5 agentes)
+### Comparativa: Lex House AI vs. Contratar Asistente
 
-**Inversión mensual en LexHouse:** $399 USD/mes (plan agencia)
-
-| Métrica | Sin LexHouse | Con LexHouse | Diferencia |
+| Alternativa | Costo/mes | Horario | Capacidad |
 |---|---|---|---|
-| Leads captados/mes | 100 | 300 | +200% |
-| Leads calificados (IA filtra) | 25 | 120 | +380% |
-| Ventas cerradas/mes | 2 | 8 | +300% |
-| Ingresos mensuales | $10,000 USD | $40,000 USD | +$30,000 USD |
-| Costo en personal admin. | $2,500 USD | $500 USD | -80% |
-| **Beneficio neto extra/mes** | — | **+$32,101 USD** | — |
-
-**ROI mensual de la agencia:**
-```
-Inversión:      $399 USD
-Ahorro + extra: $32,101 USD
-ROI:            8,045%
-```
+| Asistente humano administrativo | $600,000–$900,000 CLP | 8h/día, L-V | 1 canal a la vez |
+| **Lex House AI** | **Precio del plan** | **24h/día, 7 días** | **Todos los canales simultáneos** |
 
 ---
 
-### Comparativa de Costos
+### Dato clave de la industria
 
-| Alternativa | Costo/mes | Capacidad |
-|---|---|---|
-| Inside Sales Agent (persona) | $4,000–$6,000 | 8h/día, 5 días |
-| LexHouse IA Conversacional | $149–$399 | 24h/día, 7 días |
-| **Ahorro** | **$3,600–$5,600/mes** | **+3x cobertura** |
+> El corredor promedio tarda **más de 15 horas** en responder un lead. Un lead respondido en los primeros **5 minutos** tiene **21 veces más probabilidad** de convertirse en venta.  
+> *(Harvard Business Review)*
 
----
-
-## 5. Beneficios Clave
-
-### Para Agentes Individuales
-
-**Más tiempo, más ventas**
-- Recupera 22+ horas semanales para enfocarse en cerrar negocios
-- El sistema trabaja mientras duermes: captura y nutre leads 24/7
-- Nunca más pierdas un lead por responder tarde
-
-**Competencia con grandes agencias**
-- Acceso a tecnología que antes solo tenían empresas con presupuestos millonarios
-- Automatización que compite de igual a igual con equipos de 10+ personas
-- Posicionamiento profesional y moderno frente al cliente
-
-**Crecimiento sin contratar**
-- Escala tu volumen de clientes sin aumentar horas de trabajo
-- El sistema maneja 100 leads igual que 10, sin esfuerzo extra
+Lex House AI responde en **segundos**, las 24 horas, incluyendo domingos y festivos.
 
 ---
 
-### Para Agencias y Corredoras
+## 6. Beneficios Clave
 
-**Estandarización de procesos**
+### Para el Corredor Individual
+
+**Más tiempo en lo que importa**
+- 19 horas semanales devueltas para captación, visitas y cierre
+- La plataforma trabaja mientras duermes, en fines de semana y feriados
+- Cero oportunidades perdidas por no contestar a tiempo
+
+**Competir de igual a igual con grandes agencias**
+- Acceso a la misma tecnología que empresas con presupuestos millonarios
+- Imagen profesional validada (RUT, reseñas, historial real)
+- Presencia en +12 portales sin esfuerzo extra
+
+**Crecimiento sin contratar personal**
+- De 15 leads mensuales a 50+ con la misma dedicación
+- Automatización escala sin límite: 10 leads o 100, igual esfuerzo
+- Sin costos de RRHH, AFP, licencias ni vacaciones
+
+---
+
+### Para la Agencia o Corredora
+
+**Estandarización de la operación**
 - Todos los agentes siguen el mismo proceso de calidad
-- Eliminación de "depende de quién tomó el lead"
-- Trazabilidad completa de cada interacción
+- Trazabilidad completa: quién hizo qué, cuándo y con qué resultado
+- Reportes automáticos para gerencia en tiempo real
 
 **Reducción de costos operativos**
 - Menos personal administrativo necesario
-- Reducción del 70-85% en costos de gestión de leads
-- Menos errores = menos tiempo corrigiendo
+- Publicación centralizada en lugar de cada agente publicando por separado
+- Marketing enterprise coordinado, no duplicado por agente
 
-**Decisiones basadas en datos**
-- Dashboard de métricas en tiempo real
-- Identificación de agentes top y oportunidades de mejora
-- Reportes automáticos para gerencia
-
-**Retención de clientes**
-- El sistema mantiene el contacto aún cuando el agente está ocupado
-- Experiencia del cliente consistente y profesional
-- Mayor probabilidad de referidos por buena experiencia
+**Datos para decisiones**
+- Dashboard de ingresos en tiempo real
+- Métricas de rendimiento por agente
+- Visualización de tendencias por zona, tipo y período
 
 ---
 
-### Beneficios Diferenciales vs. Soluciones Tradicionales
+### Beneficios Diferenciales vs. Competencia
 
-| Característica | CRM tradicional | LexHouse |
-|---|---|---|
-| Requiere ingreso manual de datos | Sí | No |
-| Responde leads automáticamente | No | Sí |
-| IA conversacional integrada | No | Sí |
-| Email marketing integrado | Parcial | Completo |
-| Flujos n8n personalizables | No | Sí |
-| Asesor legal IA | No | Sí |
-| Reportes automáticos | Manual | Automático |
-| Reactivación automática | No | Sí |
-| Precio | $200–$500/mes | Desde $149/mes |
-
----
-
-## 6. Casos de Uso Reales
-
-### Caso 1: Lead en fin de semana
-
-**Escenario:** Un potencial comprador envía una consulta el sábado a las 11pm.
-
-**Sin LexHouse:** El agente ve el mensaje el lunes por la mañana. El lead ya habló con 3 agencias más.
-
-**Con LexHouse:**
-1. El lead llena el formulario (11:00pm sábado)
-2. IA responde en 45 segundos con información personalizada
-3. Sistema califica al lead (presupuesto, plazo, tipo de propiedad)
-4. Se le envía un email con 3 propiedades que coinciden con su búsqueda
-5. El lead agenda visita para el lunes por el calendario integrado
-6. El lunes el agente llega con la visita ya programada
-
-**Resultado:** Lead convertido a visita sin intervención humana.
-
----
-
-### Caso 2: Lead frío reactivado
-
-**Escenario:** Lead que visitó el portal hace 45 días y no volvió.
-
-**Sin LexHouse:** Se pierde. El agente no tiene tiempo de hacer seguimiento a todos.
-
-**Con LexHouse:**
-1. n8n detecta inactividad de 30 días
-2. Email automático: "Hola [Nombre], el mercado cambió en tu zona de interés..."
-3. Si abre el email → IA inicia conversación
-4. Si no abre → segundo email a los 7 días con nueva propiedad
-5. Si no abre → tercer email con oferta especial
-6. 23% de leads reactivados se convierten en oportunidades activas
-
-**Resultado:** Ingresos de leads que habrían muerto sin costo adicional.
-
----
-
-### Caso 3: Agencia escalando volumen
-
-**Escenario:** Agencia recibe 200 leads/mes pero solo puede manejar 40.
-
-**Sin LexHouse:** 160 leads perdidos por falta de capacidad.
-
-**Con LexHouse:**
-1. IA califica automáticamente los 200 leads
-2. Top 40 (calientes) van a los agentes con toda la info del lead
-3. Próximos 80 (tibios) entran en secuencia de nurturing automático
-4. Últimos 80 (fríos) reciben contenido educativo mensual
-5. Total manejado efectivamente: 200 leads con el mismo equipo
-
-**Resultado:** 5x más leads gestionados sin contratar personal.
-
----
-
-## 7. Modelos de Precios
-
-### Planes Sugeridos para LexHouse
-
-#### Plan Starter — $79 USD/mes
-**Para:** Agentes independientes que comienzan
-- Hasta 100 leads/mes
-- IA conversacional básica (web)
-- 3 flujos n8n predefinidos
-- Email marketing: hasta 500 emails/mes
-- Soporte por email
-
-#### Plan Profesional — $149 USD/mes  ⭐ Más popular
-**Para:** Agentes activos con volumen medio
-- Hasta 500 leads/mes
-- IA conversacional avanzada (web + WhatsApp)
-- Flujos n8n ilimitados personalizables
-- Email marketing: hasta 5,000 emails/mes
-- Extractor de datos de mercado
-- Reportes automáticos semanales
-- Soporte prioritario
-
-#### Plan Agencia — $399 USD/mes
-**Para:** Agencias y equipos de 3+ agentes
-- Leads ilimitados
-- Módulo de asignación multi-agente
-- IA conversacional multicanal
-- Email marketing ilimitado
-- Integración con portales externos
-- Módulo Legal IA incluido
-- Dashboard ejecutivo
-- Onboarding personalizado
-- Soporte dedicado 24/7
-
-#### Plan Enterprise — Precio a convenir
-**Para:** Grandes corredoras, desarrolladoras, franquicias
-- Todo del plan Agencia
-- Branding personalizado (white-label)
-- Integraciones API propias
-- Gerente de cuenta dedicado
-- SLA garantizado
-
----
-
-### Comparativa de Valor por Plan
-
-| Herramienta | Starter | Pro | Agencia |
+| Característica | Software CRM genérico | Portal inmobiliario clásico | **Lex House AI** |
 |---|---|---|---|
-| Supabase DB | ✅ | ✅ | ✅ |
-| IA Conversacional | Básica | Avanzada | Multi-canal |
-| n8n Flujos | 3 | Ilimitados | Ilimitados |
-| Email Marketing | 500/mes | 5,000/mes | Ilimitado |
-| Extractor de datos | ❌ | ✅ | ✅ |
-| Reportes automáticos | ❌ | ✅ | ✅ |
-| Legal IA | ❌ | ❌ | ✅ |
-| Multi-agente | ❌ | ❌ | ✅ |
+| IA conversacional integrada | ❌ | ❌ | ✅ WhatsApp + Voz |
+| Publicador masivo (+12 portales) | ❌ | Parcial | ✅ |
+| Reels y videos IA | ❌ | ❌ | ✅ |
+| Análisis de contratos IA | ❌ | ❌ | ✅ |
+| Valuación inteligente | ❌ | ❌ | ✅ |
+| Cazador de leads outbound | ❌ | ❌ | ✅ |
+| Perfil con verificación RUT | ❌ | Parcial | ✅ |
+| Cifrado AES-256-GCM | ❌ | ❌ | ✅ |
+| Diseñado para Chile | ❌ | Parcial | ✅ Español chileno nativo |
 
 ---
 
-## 8. Guión para Video Explicativo
+## 7. Casos de Uso Reales
 
-> **Duración sugerida:** 3-5 minutos  
-> **Tono:** Profesional pero cercano, directo al valor
+### Caso 1: El lead de domingo a las 10pm
 
----
+**Escenario:** Un comprador llama un domingo a las 22:00 por un departamento en Las Condes.
 
-### [0:00 – 0:20] GANCHO DE APERTURA
+**Sin Lex House AI:** Llamada perdida. El lunes el corredor llama de vuelta, pero el comprador ya visitó a otra corredora el sábado anterior.
 
-**Imagen:** Agente mirando el teléfono preocupado / bandeja de entrada llena
+**Con Lex House AI:**
+1. El Agente de Voz Inbound responde la llamada en tiempo real
+2. Confirma disponibilidad del departamento
+3. Agenda visita para el martes en el calendario del corredor
+4. Envía resumen al corredor por WhatsApp
+5. Lead creado automáticamente en el CRM con todos los datos
 
-> *"¿Cuántos leads has perdido esta semana porque no tuviste tiempo de responderlos? ¿Cuántas horas pasas ingresando datos, enviando emails, haciendo seguimientos que nunca terminan?"*
-
----
-
-### [0:20 – 0:50] EL PROBLEMA
-
-**Imagen:** Split screen — agente trabajando tarde vs. competidor cerrando venta
-
-> *"El agente inmobiliario promedio tarda más de 15 horas en responder a un lead. Para ese momento, ese cliente ya cerró con alguien más. Y mientras tanto, pasas horas haciendo trabajo administrativo que te roba tiempo de lo único que importa: cerrar ventas."*
+**Resultado:** Visita programada mientras el corredor dormía.
 
 ---
 
-### [0:50 – 1:30] PRESENTACIÓN DE LEXHOUSE
+### Caso 2: Publicar 8 propiedades nuevas
 
-**Imagen:** Logo + pantalla del dashboard
+**Escenario:** Corredor tiene 8 propiedades nuevas para publicar.
 
-> *"Te presento LexHouse. El primer portal inmobiliario inteligente que trabaja por ti las 24 horas del día, los 7 días de la semana."*
+**Sin Lex House AI:** 8 propiedades × 12 portales × 15 min c/u = 24 horas de trabajo.
 
-> *"LexHouse combina cuatro tecnologías de punta en una sola plataforma: base de datos inteligente, automatización avanzada, inteligencia artificial conversacional y email marketing automatizado."*
+**Con Lex House AI:**
+1. Sube fotos y datos básicos a la plataforma
+2. La IA optimiza descripción y título para cada portal
+3. Publicador Masivo publica en los 12 portales simultáneamente
+4. Perfil de corredor con RUT verificado aparece en cada listado
 
----
-
-### [1:30 – 2:30] DEMOSTRACIÓN DE HERRAMIENTAS
-
-**Imagen:** Capturas de pantalla / demo en vivo de cada módulo
-
-> **IA Conversacional:**
-> *"Cuando un cliente llega a tu portal a las 11 de la noche, nuestro asistente de IA responde en menos de 60 segundos. Califica al lead, responde sus preguntas y agenda la visita. Todo mientras tú duermes."*
-
-> **Automatización n8n:**
-> *"Cuando llega un nuevo lead, el sistema automáticamente lo guarda, notifica al agente correcto, envía el email de bienvenida y programa los seguimientos. Cero trabajo manual."*
-
-> **Email Marketing:**
-> *"¿Ese cliente que visitó tu portal hace 30 días y no volvió? LexHouse lo contacta automáticamente con propiedades nuevas y ofertas personalizadas. El 23% vuelve como oportunidad activa."*
+**Tiempo total:** 45 minutos (vs. 24 horas). **Ahorro: 23 horas y 15 minutos.**
 
 ---
 
-### [2:30 – 3:00] EL ROI EN NÚMEROS
+### Caso 3: Revisar contrato antes de firmar
 
-**Imagen:** Animación de números / gráficos
+**Escenario:** Cliente quiere firmar contrato de arrendamiento mañana. El corredor no es abogado.
 
-> *"Los números hablan solos:"*
-> *"Nuestros usuarios ahorran en promedio 22 horas por semana."*
-> *"Triplican su volumen de leads gestionados."*
-> *"Y con el plan Profesional de solo $149 al mes, el sistema genera en promedio $4,600 dólares adicionales por mes."*
-> *"Eso es un retorno de más de 3,000% sobre tu inversión."*
+**Sin Lex House AI:** Pagar $80,000–$150,000 CLP por revisión de abogado, o firmar sin revisar (riesgo).
 
----
+**Con Lex House AI:**
+1. Sube el contrato al módulo Contrato X-Ray
+2. La IA analiza en segundos y marca cláusulas problemáticas
+3. El corredor puede chatear con el contrato: "¿Qué pasa si el arrendatario no paga?"
+4. Entrega reporte al cliente con los puntos a negociar
 
-### [3:00 – 3:30] DIFERENCIADORES
-
-**Imagen:** Comparativa visual
-
-> *"A diferencia de los CRM tradicionales que solo guardan información, LexHouse actúa. Automatiza. Convierte."*
-> *"Y a diferencia de contratar un asistente de ventas — que te cuesta entre $4,000 y $6,000 al mes — LexHouse lo hace por $149, sin descansos, sin vacaciones, sin errores."*
+**Resultado:** Transacción más segura, corredor diferenciado como asesor de confianza.
 
 ---
 
-### [3:30 – 4:00] LLAMADA A LA ACCIÓN
+### Caso 4: Video para Instagram de una propiedad
 
-**Imagen:** Pantalla de registro / testimonios
+**Escenario:** Corredor quiere publicar un reel de un penthouse en Vitacura.
 
-> *"Empieza hoy con 14 días de prueba gratis. Sin tarjeta de crédito. Sin compromisos."*
-> *"Únete a los agentes que ya están cerrando más ventas con menos esfuerzo."*
-> *"LexHouse: Tu portal inmobiliario inteligente."*
-> *"[URL del portal]"*
+**Sin Lex House AI:** Contratar videógrafo ($80,000–$200,000 CLP) o editar el video a mano (3–4 horas).
 
----
+**Con Lex House AI:**
+1. Selecciona la propiedad en el módulo Reels & Stories
+2. Elige plantilla cinematográfica
+3. La IA arma el reel con fotos, transiciones, música, overlay de precio y CTA
+4. Descarga el video 9:16 listo para Instagram o TikTok
 
-### Puntos Clave a Destacar en el Video
-
-- Demostración en vivo de la IA respondiendo un lead real
-- Mostrar el dashboard con métricas reales
-- Testimonios de usuarios si están disponibles
-- Animaciones de los flujos de automatización
-- Comparativa de precio vs. alternativas
+**Tiempo total:** 10–15 minutos. **Ahorro: 3–4 horas o $80,000–$200,000 CLP.**
 
 ---
 
-## 9. Preguntas Frecuentes (FAQ)
+## 8. Modelos de Precios
 
-**¿Necesito conocimientos técnicos para usar LexHouse?**
-No. La plataforma está diseñada para agentes sin perfil técnico. El setup inicial es asistido y los flujos vienen preconfigurados.
+### Estructura de Planes
 
-**¿Cuánto tiempo toma la implementación?**
-La configuración básica se completa en 1-2 días. Los flujos personalizados pueden implementarse en 1 semana.
+Lex House AI opera con un modelo de suscripción mensual más **consumo variable por herramientas IA** medido en **UF** (Unidades de Fomento), lo que hace que el costo escale con el uso real.
 
-**¿Se integra con los portales donde ya tengo publicaciones?**
-Sí. El plan Agencia incluye integración con portales externos populares. Nuevas integraciones se agregan según demanda.
+#### Plan Growth
+**Para:** Corredores individuales y agencias pequeñas
 
-**¿Qué pasa con mis datos si cancelo?**
-Todos tus datos son tuyos. Puedes exportarlos en cualquier momento en formato estándar.
+**Incluye:**
+- ✅ Agente WhatsApp IA 24/7
+- ✅ Precalificación Inteligente de Leads
+- ✅ Agendamiento Automático de Visitas
+- ✅ CRM Inmobiliario
+- ✅ Publicador Masivo (+12 portales)
+- ✅ Soporte Técnico Especializado
+- ❌ Agente de Voz IA Inbound
+- ❌ Agente de Voz IA Outbound (Cazador)
+- ❌ Herramientas Enterprise
 
-**¿El asistente de IA puede parecerse a mi marca?**
-Sí. Puedes personalizarlo con el nombre, tono y datos de tu empresa o agencia.
+#### Plan Enterprise
+**Para:** Agencias medianas y grandes corredoras
 
-**¿Funciona para arrendamientos y también para ventas?**
-Sí. LexHouse está optimizado para ambos tipos de transacciones, con flujos específicos para cada una.
+**Incluye todo el Plan Growth más:**
+- ✅ Agente de Voz IA Inbound (Recepción 24/7)
+- ✅ Agente de Voz IA Outbound (Cazador de Leads)
+- ✅ Marketing Enterprise con dashboard avanzado
+- ✅ Torre de Control y panel administrativo
+- ✅ Reels & Stories IA
+- ✅ Todas las herramientas del marketplace IA
+- ✅ Acceso completo a todos los módulos
 
-**¿Qué tan segura es mi información?**
-La base de datos usa Supabase con cifrado en reposo y en tránsito, autenticación de dos factores y políticas de seguridad a nivel de fila (RLS). Cumple estándares internacionales de protección de datos.
+### Herramientas por Consumo (UF)
+
+Algunas herramientas se cobran por uso en UF adicionales al plan:
+- **Recepción 24/7 (Voz Inbound):** 2.5 UF / período
+- Otras herramientas del marketplace con precios individuales en UF
+
+> *Nota: Los precios exactos de suscripción se encuentran en [www.lexhouse-ai.com](https://www.lexhouse-ai.com). Los valores en UF se actualizan automáticamente con la inflación.*
+
+---
+
+## 9. Guión para Video Explicativo
+
+*(Ver archivo separado: `GUION_VIDEO_EXPLICATIVO.md`)*
+
+---
+
+## 10. Preguntas Frecuentes (FAQ)
+
+**¿Lex House AI es solo para corredores en Chile?**
+Sí. La plataforma está diseñada exclusivamente para el mercado chileno: español chileno nativo, precios en UF y CLP, portales chilenos integrados, y flujos legales adaptados a la normativa local.
+
+**¿Necesito conocimientos técnicos para usar la plataforma?**
+No. La plataforma está construida para corredores, no para programadores. La interfaz es intuitiva y el onboarding está asistido.
+
+**¿El Agente WhatsApp habla igual que yo?**
+No habla igual que tú, pero habla como un asistente profesional en español chileno natural. Puedes personalizar el nombre y el tono para que se alinee con tu marca personal.
+
+**¿Mis datos y los de mis clientes están seguros?**
+Sí. Los archivos se cifran con AES-256-GCM directamente en tu navegador antes de enviarse al servidor. Incluso si el almacenamiento fuera comprometido, los datos son ilegibles sin tu clave. Además, cada corredor accede solo a sus propios datos gracias a las políticas RLS de Supabase.
+
+**¿El Publicador Masivo funciona con todos los portales del mercado?**
+Publica en +12 portales. La lista exacta está disponible en la plataforma. Se agregan nuevos portales periódicamente.
+
+**¿Puedo usar Contrato X-Ray para reemplazar a un abogado?**
+No. Contrato X-Ray es una herramienta de apoyo para detectar riesgos y entender el contrato. Para operaciones complejas o dudas legales específicas, siempre recomendamos asesoría legal profesional.
+
+**¿Qué pasa si el Agente de Voz no puede resolver una consulta?**
+El agente escala automáticamente: te notifica en tiempo real y el cliente recibe confirmación de que pronto será atendido por un humano.
+
+**¿Puedo probar la plataforma antes de suscribirme?**
+Para información sobre período de prueba, visita [www.lexhouse-ai.com](https://www.lexhouse-ai.com) o contáctanos directamente.
 
 ---
 
 ## Fuentes y Respaldo Estadístico
 
-- NextAutomation (2025): *AI Automation for Real Estate — How Top Firms Are Scaling*
-- Harvard Business Review: *The Short Life of Online Sales Leads* — estadística de 5 minutos / 21x
-- n8n.io Case Studies (2025): *Workflow Automation ROI — 312% in 90 days*
-- Mailerlite (2024): *Email Marketing ROI — $42 per $1 spent*
+- Harvard Business Review: *The Short Life of Online Sales Leads* — dato 5 min / 21x
+- NextAutomation (2025): *AI Automation for Real Estate — 300% leads, 40% conversión*
 - Artsmart AI (2025): *AI in Real Estate — 30+ Statistics*
-- Blastrow (2026): *Real Estate Email Marketing Benchmarks*
-- Crescendo AI (2026): *Conversational AI for Real Estate — 5 Practical Applications*
+- Crescendo AI (2026): *Conversational AI for Real Estate — 65% consultas sin humano*
+- Mailerlite (2024): *Email Marketing ROI — $42 por $1 invertido*
+- n8n.io Case Studies (2025): *312% ROI en 90 días*
 - Morgan Stanley (2025): *AI in Real Estate: Innovations Reshaping the Sector*
 
 ---
 
-*Documento preparado para uso interno y materiales de ventas de LexHouse.*  
-*Actualizar con datos reales de usuarios una vez que la plataforma esté operativa.*
+*Documento preparado por Lex House Intelligence Inc.*  
+*Sitio web: [www.lexhouse-ai.com](https://www.lexhouse-ai.com)*
