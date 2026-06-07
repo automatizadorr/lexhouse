@@ -45,7 +45,7 @@
 | Contratos revisados sin asesoría legal | Análisis de contratos con IA en segundos |
 | Sin datos reales de valoración | Valuación inteligente en tiempo real |
 | Videos caros y tardíos | Reels para Instagram y TikTok en minutos |
-| Leads perdidos sin seguimiento | Cazador de leads activo 24/7 con Kanban |
+| Leads fríos sin seguimiento | Reactivación automática por WhatsApp API oficial y email |
 | CRM genérico desconectado del flujo | CRM inmobiliario integrado con IA y comunicación |
 | Documentos guardados en carpetas caóticas | Bóveda Legal encriptada AES-256 por operación |
 | Análisis de inversión manual y lento | Calculadora IA de retorno por propiedad |
@@ -90,7 +90,7 @@
 | Categoría | Módulo | Ruta | Badge |
 |---|---|---|---|
 | **Captación y Atención** | Agentes IA (WhatsApp + Voz) | `/app/ai-services` | PRO |
-| **Captación y Atención** | Reactivación de Clientes | `/app/cazador-leads` | NEW IA |
+| **Captación y Atención** | Reactivación de Leads | `/app/cazador-leads` | NEW IA |
 | **Publicación** | Publicador Masivo | `/app/publicador-masivo` | NEW IA |
 | **Contenido** | Reels & Stories IA | `/app/reels` | NEW IA |
 | **Marketing** | Marketing Enterprise | `/app/marketing-enterprise` | PRO |
@@ -149,47 +149,63 @@ Atiende automáticamente todos los mensajes de WhatsApp. Responde consultas, cal
 
 ---
 
-### 4.2 Agente de Voz IA Inbound — Recepción 24/7
+### 4.2 Agente de Voz IA Inbound — Calificación 24/7
 
 **Ruta:** `/app/ai-services`  
 **Costo por uso:** 2.5 UF / período
 
 **¿Qué hace?**
-Atiende llamadas telefónicas con voz humana realista. Responde FAQs de propiedades, agenda visitas directamente en el calendario y sincroniza con el CRM.
+Atiende llamadas telefónicas entrantes con voz humana realista. Está diseñado específicamente para **calificar a clientes que mostraron interés en el portal** — ya sea por una propiedad vista en el Marketplace, una consulta por WhatsApp o una solicitud de visita. Responde FAQs, agenda visitas directamente en el calendario y sincroniza con el CRM.
 
 **Capacidades:**
 - Voz humana realista en español chileno
+- Calificación de interesados del portal: presupuesto, zona, urgencia, tipo de operación
 - Manejo de objeciones frecuentes (precio, ubicación, disponibilidad)
 - Sync automático con calendario del corredor
-- Resumen de llamada + lead creado automáticamente
+- Resumen de llamada + lead calificado creado automáticamente en el CRM
 - Cero llamadas perdidas, incluso fuera del horario de oficina
 
 **Ejemplo real:**
-> Un comprador llama un domingo a las 22:00 por un departamento en Las Condes. LeyIA responde, confirma disponibilidad, agenda visita para el martes y envía un WhatsApp al corredor con el resumen.
+> Un comprador vio una propiedad en el Marketplace a las 22:00 y llama al número del corredor. El Agente de Voz responde, lo califica (presupuesto: $150M CLP, zona Providencia, listo para comprar en 60 días), agenda visita para el martes y envía un WhatsApp al corredor con el resumen completo.
 
 ---
 
-### 4.3 Agente de Voz IA Outbound — Cazador de Leads / Reactivación de Clientes
+### 4.3 Reactivación de Leads — WhatsApp API Oficial + Email
 
 **Ruta:** `/app/cazador-leads`  
-**Panel:** Kanban de pipeline + OutboundCallPanel
+**Canal:** WhatsApp Business API oficial + Email marketing automatizado
 
 **¿Qué hace?**
-Llama activamente a bases de prospectos o leads fríos con 6 objetivos posibles. Gestiona el pipeline de llamadas en un tablero Kanban visual.
+Reactiva automáticamente leads que mostraron interés en propiedades del portal pero no avanzaron en el proceso. Utiliza **WhatsApp API oficial** (no app personal, API empresarial verificada) y **secuencias de email** para reconectar con prospectos fríos y tibios — de forma personalizada y a escala.
 
-**Objetivos de llamada configurables:**
-- 🎯 **Calificar Lead** — detectar intención y presupuesto
-- 📅 **Agendar Visita** — programar cita directamente
-- 🔄 **Seguimiento** — mantener el contacto con leads tibios
-- 🏠 **Ofrecer Propiedad** — presentar propiedades específicas
-- 💰 **Negociación** — avanzar propuestas en curso
-- ✅ **Cierre** — concretar la operación
+**Flujo de reactivación:**
+1. Identificación de leads inactivos según criterios: tiempo sin respuesta, etapa del pipeline, propiedad de interés
+2. Segmentación automática por tipo de lead (interesado en venta, arriendo, zona, presupuesto)
+3. Secuencia de mensajes personalizados vía WhatsApp API oficial
+4. Secuencia paralela de emails de seguimiento con información de propiedades relevantes
+5. Si el lead responde → entra automáticamente al CRM con etiqueta "reactivado"
+6. Panel de control con métricas: enviados, abiertos, respondidos, convertidos
 
-**Gestión con Kanban:**
-- Tablero visual de pipeline de llamadas
-- Drag & drop entre etapas
-- Registro de timestamp y resultado de cada llamada
+**Canales y capacidades:**
+- **WhatsApp API oficial** (no WhatsApp Web personal — cumple políticas Meta para empresa)
+  - Mensajes con templates aprobados por Meta
+  - Posibilidad de enviar fichas de propiedades, links e imágenes directamente
+  - Historial de conversación por lead
+- **Email automatizado**
+  - Secuencias de hasta N emails por lead
+  - Personalización dinámica: nombre, propiedad de interés, zona, precio
+  - Métricas de apertura, clicks y respuestas
+  - Integración con los datos del CRM
+
+**Panel de gestión:**
+- Tablero visual con pipeline de reactivación
+- Drag & drop entre etapas (Enviado / Abierto / Respondió / Agendó / Cerrado)
+- Registro de cada interacción con timestamp
 - Auditoría de seguridad RLS automática por usuario
+
+**Resultado esperado:**
+- 15–23% de leads fríos reactivados con visita o consulta activa
+- 0 tiempo del corredor en seguimientos manuales repetitivos
 
 ---
 
@@ -294,9 +310,10 @@ Genera valuaciones profesionales de propiedades usando IA. Analiza datos de merc
 **Capacidades:**
 - Valoración en tiempo real basada en datos actualizados
 - Análisis de comparables en la misma zona y tipología
-- Informe descargable para presentar al mandante
-- Historial de valuaciones realizadas
+- **Informe de valuación descargable en PDF** para presentar al mandante o cliente
+- Historial de valuaciones realizadas (organizadas por propiedad y fecha)
 - Argumentos objetivos para negociación (precio alto/bajo de mercado)
+- Alertas de precio cuando el mercado cambia
 - Alertas de precio cuando el mercado cambia
 
 ---
@@ -315,7 +332,8 @@ Analiza contratos inmobiliarios con IA multi-modelo (OpenAI + Claude). Detecta c
 2. La IA analiza el documento completo
 3. Se marcan las cláusulas de riesgo con niveles de severidad
 4. Chat interactivo: el usuario pregunta sobre cualquier punto
-5. Historial de análisis guardado por operación
+5. **Descarga del informe de análisis** con todas las cláusulas marcadas y observaciones
+6. Historial de análisis guardado por operación
 
 **Detecta:**
 - Cláusulas abusivas o inusuales
@@ -346,9 +364,10 @@ Calcula el retorno de inversión de una propiedad usando IA. Ideal para presenta
 - Valorización histórica de la zona
 - Comparativa con alternativas de inversión (UF, mercado accionario)
 
-**Historial:**
+**Historial y exportación:**
 - Análisis guardados con fecha y propiedad
-- Exportables para enviar al cliente
+- **Informe descargable en PDF** listo para presentar al cliente inversionista
+- Exportable para enviar por WhatsApp o email directamente desde la plataforma
 - Dashboard de todos los análisis realizados
 
 **Calculadora Integrada en cada Propiedad:**
@@ -400,6 +419,19 @@ Sistema de gestión comercial diseñado para el flujo inmobiliario chileno. Cent
 - Creación, edición y eliminación de tareas
 - Seguimiento de estado por tarea
 - Vista filtrable por estado
+
+#### Matching Inteligente Leads ↔ Propiedades
+
+El CRM cruza automáticamente el perfil de preferencias de cada lead con las propiedades disponibles en el portal y genera un **porcentaje de compatibilidad** para cada par.
+
+**¿Cómo funciona?**
+- Al calificarse un lead, el sistema registra sus preferencias: zona, tipo de propiedad, presupuesto, dormitorios, condición (venta/arriendo)
+- El motor de matching compara esas preferencias contra todas las propiedades activas en el portal
+- Asigna un **% de compatibilidad** (ej: "87% match") para cada propiedad candidata
+- El corredor ve un ranking ordenado de propiedades sugeridas para ese lead
+- Puede enviar las fichas top directamente al lead desde el CRM con un click
+
+**Beneficio directo:** El corredor deja de buscar manualmente qué propiedad mostrar a cada cliente — el sistema lo hace solo, con datos objetivos.
 
 #### Plantillas de Mensajes
 - Biblioteca de mensajes reutilizables
@@ -480,6 +512,11 @@ Página de detalle completa para cada propiedad, con URL optimizada para compart
   - Paso 1: Datos del Comprador (nombre, RUT, email, teléfono, financiamiento)
   - Paso 2: Detalles Económicos (monto oferta, plazo, condiciones, reserva)
   - Oferta registrada en el CRM y notificada al corredor
+- **📄 Generar Acuerdo de Compraventa** — una vez aceptada la oferta, el corredor puede generar el borrador del acuerdo de compraventa directamente desde la ficha de la propiedad:
+  - Se completa automáticamente con los datos del comprador, vendedor y propiedad
+  - Editable antes de finalizar
+  - **Descargable en PDF** para firma entre las partes
+  - Guardado en la Bóveda Legal cifrada asociada a esa propiedad
 
 #### Calculadora de Inversión Embebida
 - Calcula rentabilidad en el momento de ver la propiedad
@@ -762,9 +799,9 @@ Lex House AI combina dos capas de precio:
 **Para:** Agencias medianas y grandes corredoras — operación completa sin fricción
 
 **Todo el Plan Growth más:**
-- ✅ Agente de Voz IA Inbound (Recepción 24/7)
-- ✅ Agente de Voz IA Outbound (Cazador de Leads)
-- ✅ Kanban de Pipeline de Llamadas
+- ✅ Agente de Voz IA Inbound (Calificación 24/7 de interesados del portal)
+- ✅ Reactivación de Leads (WhatsApp API oficial + Email automatizado)
+- ✅ Kanban de Pipeline de Reactivación
 - ✅ Marketing Enterprise con dashboard avanzado
 - ✅ Torre de Control y panel administrativo completo
 - ✅ Super Admin (gestión de múltiples corredores)
