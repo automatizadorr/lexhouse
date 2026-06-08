@@ -31,7 +31,7 @@ header::before{
 }
 header h1{font-size:clamp(22px,3.5vw,38px);font-weight:800;letter-spacing:-1px;margin-bottom:8px}
 header h1 span{color:var(--dorado-c)}
-header p{color:rgba(255,255,255,.72);font-size:14px;max-width:560px;margin:0 auto 20px}
+header p{color:rgba(255,255,255,.72);font-size:14px;max-width:580px;margin:0 auto 20px}
 .pills{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
 .pill{
   background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);
@@ -41,10 +41,16 @@ header p{color:rgba(255,255,255,.72);font-size:14px;max-width:560px;margin:0 aut
 /* ── ALERTA TÉCNICA */
 .tech-alert{
   background:#fff8e1;border-left:4px solid var(--dorado);
-  padding:14px 24px;font-size:13.5px;color:#5a4000;line-height:1.6;
-  margin:0
+  padding:14px 24px;font-size:13.5px;color:#5a4000;line-height:1.6;margin:0
 }
 .tech-alert strong{color:#3d2c00}
+
+/* ── SETTING BOX */
+.setting-box{
+  background:#f0f4ff;border-left:4px solid var(--azul);
+  padding:14px 24px;font-size:13px;color:var(--texto);line-height:1.65;margin:0
+}
+.setting-box strong{color:var(--azul)}
 
 /* ── NAV */
 .nav-wrap{
@@ -64,9 +70,7 @@ header p{color:rgba(255,255,255,.72);font-size:14px;max-width:560px;margin:0 aut
 
 /* ── BLOQUE */
 .bloque{margin-bottom:40px}
-.bloque-header{
-  display:flex;align-items:center;gap:12px;margin-bottom:16px
-}
+.bloque-header{display:flex;align-items:center;gap:12px;margin-bottom:16px}
 .bloque-num{
   background:var(--azul-d);color:#fff;font-size:11px;font-weight:800;
   padding:4px 12px;border-radius:8px;letter-spacing:.5px;white-space:nowrap
@@ -78,8 +82,7 @@ header p{color:rgba(255,255,255,.72);font-size:14px;max-width:560px;margin:0 aut
 /* ── CLIP CARD */
 .clip{
   background:#fff;border-radius:14px;border:1px solid var(--gris-m);
-  box-shadow:0 2px 10px rgba(0,30,90,.07);
-  margin-bottom:14px;overflow:hidden
+  box-shadow:0 2px 10px rgba(0,30,90,.07);margin-bottom:14px;overflow:hidden
 }
 .clip-header{
   display:flex;align-items:center;gap:12px;
@@ -120,9 +123,7 @@ header p{color:rgba(255,255,255,.72);font-size:14px;max-width:560px;margin:0 aut
 .narr p::before{content:'▶';position:absolute;left:0;color:var(--azul);font-size:8px;top:5px;opacity:.55}
 .narr p:last-child{margin-bottom:0}
 
-.clip-foot{
-  padding:12px 22px;border-top:1px solid var(--gris-m);background:#f9fafb
-}
+.clip-foot{padding:12px 22px;border-top:1px solid var(--gris-m);background:#f9fafb}
 .foot-label{
   font-size:9.5px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;
   color:#c47d00;margin-bottom:6px;display:flex;align-items:center;gap:5px
@@ -136,13 +137,9 @@ header p{color:rgba(255,255,255,.72);font-size:14px;max-width:560px;margin:0 aut
 .no-screen{font-size:12px;color:var(--muted);font-style:italic}
 
 /* ── VERSIONES CORTAS */
-.short-divider{
-  display:flex;align-items:center;gap:14px;margin:44px 0 24px
-}
+.short-divider{display:flex;align-items:center;gap:14px;margin:44px 0 24px}
 .short-divider hr{flex:1;border:none;border-top:2px solid var(--gris-m)}
-.short-divider h2{
-  font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:var(--azul);white-space:nowrap
-}
+.short-divider h2{font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:var(--azul);white-space:nowrap}
 .short-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-bottom:36px}
 .short-card{background:#fff;border:1px solid var(--gris-m);border-radius:13px;overflow:hidden}
 .short-card-h{padding:14px 18px 11px;border-bottom:1px solid var(--gris-m);display:flex;align-items:center;gap:10px}
@@ -172,24 +169,29 @@ footer a{color:var(--dorado-c);text-decoration:none}
 
 <!-- HEADER -->
 <header>
-  <div class="badge">Producción Veo 3.1 — 36 clips × 10 segundos</div>
+  <div class="badge">Producción Veo 3.1 — 36 clips × 10 segundos · Prompts en inglés</div>
   <h1>Lex House AI — <span>Copy de Video Sincronizado</span></h1>
-  <p>Cada clip está calibrado para 10 s exactos de Veo 3.1. Narración ≤ 22 palabras por clip a velocidad profesional de voz en off (~130 ppm).</p>
+  <p>Cada clip calibrado para 10 s exactos. Narración ≤ 22 palabras por clip (~130 ppm). Prompts visuales en inglés optimizados para Veo 3.1.</p>
   <div class="pills">
     <span class="pill">⏱ 6:00 min · 36 clips</span>
     <span class="pill">🎬 Veo 3.1 · 10 s / clip</span>
     <span class="pill">🎤 ~22 palabras / clip</span>
-    <span class="pill">🎯 Audiencia: Inmobiliarias</span>
+    <span class="pill">🏢 Oficinas tech + real estate · Luz de día</span>
     <span class="pill">🌐 www.lexhouse-ai.com</span>
   </div>
 </header>
 
-<!-- ALERTA TÉCNICA -->
-<div class="tech-alert">
-  <strong>Regla de sincronización:</strong> A 130 palabras/minuto (voz en off profesional), 10 segundos = 21–22 palabras. Cada narración está dentro de ese límite. Las palabras entre corchetes <em>[PAUSA]</em> indican que el locutor debe hacer una pausa dramática de ~1 s para llenar el tiempo. El <strong>Word Count (WC)</strong> aparece en cada clip — verde = OK, amarillo = usar pausa.
+<!-- ESCENARIO VISUAL GLOBAL -->
+<div class="setting-box">
+  <strong>Escenario visual global (aplicar en todos los clips):</strong> Avant-garde tech company fused with luxury real estate. Minimalist white open-plan office. Floor-to-ceiling windows, bright natural daylight. White marble desks, curved ultrawide monitors, glass partition walls. Professionals in smart-casual attire. Premium finishes: concrete ceilings, indoor plants, city skyline visible through glass. Clean, bright, modern — Apple meets Sotheby's.
 </div>
 
-<!-- ÍNDICE DE NAVEGACIÓN -->
+<!-- ALERTA TÉCNICA -->
+<div class="tech-alert">
+  <strong>Regla de sincronización:</strong> A 130 palabras/minuto (voz en off profesional), 10 segundos = 21–22 palabras. <em>[PAUSA]</em> = pausa dramática de ~1 s para llenar el tiempo. <strong>WC</strong> en cada clip — verde = OK.
+</div>
+
+<!-- ÍNDICE -->
 <nav class="nav-wrap">
   <span class="label">Bloques:</span>
   <a href="#b1">B1 Gancho</a>
@@ -208,16 +210,15 @@ footer a{color:var(--dorado-c);text-decoration:none}
 
 <div class="container">
 
-<!-- ════════════════════════════════════════ BLOQUE 1 -->
+<!-- ═══════════════════════ BLOQUE 1 -->
 <div class="bloque" id="b1">
   <div class="bloque-header">
     <div class="bloque-num">BLOQUE 1</div>
-    <div class="bloque-title">El Gancho — El inventario invisible</div>
+    <div class="bloque-title">El Gancho — El inventario sin compradores</div>
     <div class="bloque-divider"></div>
     <div class="bloque-meta">Clips 1–3 · 0:00–0:30</div>
   </div>
 
-  <!-- CLIP 1 -->
   <div class="clip">
     <div class="clip-header">
       <div class="clip-badge">CLIP 01</div>
@@ -226,11 +227,11 @@ footer a{color:var(--dorado-c);text-decoration:none}
     </div>
     <div class="clip-body">
       <div class="block">
-        <div class="blabel lv">Prompt visual Veo 3.1</div>
-        <div class="vprompt">Corredor inmobiliario chileno sentado en escritorio de noche, iluminado solo por la pantalla del computador. Plano medio frontal, cámara estática. Expresión de agotamiento. 10 segundos, sin corte.</div>
+        <div class="blabel lv">Veo 3.1 Visual Prompt (EN)</div>
+        <div class="vprompt">A Chilean real estate professional sits at a clean white marble desk in a bright minimalist tech-real estate office. Floor-to-ceiling windows, natural morning daylight. Large curved monitor shows multiple unanswered chat notifications. Tired, overwhelmed expression. Static medium frontal shot. 10 seconds, no cut.</div>
       </div>
       <div class="block">
-        <div class="blabel lvo">Narración — voz en off</div>
+        <div class="blabel lvo">Narración — voz en off (ES)</div>
         <div class="narr">
           <p>"¿Cuántos leads perdió esta semana… [PAUSA] porque no llegó a tiempo a responder?"</p>
         </div>
@@ -242,7 +243,6 @@ footer a{color:var(--dorado-c);text-decoration:none}
     </div>
   </div>
 
-  <!-- CLIP 2 -->
   <div class="clip">
     <div class="clip-header">
       <div class="clip-badge">CLIP 02</div>
@@ -251,11 +251,11 @@ footer a{color:var(--dorado-c);text-decoration:none}
     </div>
     <div class="clip-body">
       <div class="block">
-        <div class="blabel lv">Prompt visual Veo 3.1</div>
-        <div class="vprompt">Close-up de celular en la mesa con 12 notificaciones de WhatsApp sin responder. Reloj en la pared marcando las 23:00. Zoom lento de 3 s hacia el celular. Fondo oscuro, luz fría.</div>
+        <div class="blabel lv">Veo 3.1 Visual Prompt (EN)</div>
+        <div class="vprompt">Extreme close-up of a modern iPhone on a white marble desk surface. Screen shows 12 unread WhatsApp messages glowing. Background softly blurred: bright white office, glass walls, city skyline. Slow 3-second zoom toward the phone. Natural daylight, clean and airy atmosphere.</div>
       </div>
       <div class="block">
-        <div class="blabel lvo">Narración — voz en off</div>
+        <div class="blabel lvo">Narración — voz en off (ES)</div>
         <div class="narr">
           <p>"¿Cuántas horas del día se van publicando en portales, revisando contratos, mandando emails..."</p>
         </div>
@@ -267,7 +267,6 @@ footer a{color:var(--dorado-c);text-decoration:none}
     </div>
   </div>
 
-  <!-- CLIP 3 -->
   <div class="clip">
     <div class="clip-header">
       <div class="clip-badge">CLIP 03</div>
@@ -276,11 +275,11 @@ footer a{color:var(--dorado-c);text-decoration:none}
     </div>
     <div class="clip-body">
       <div class="block">
-        <div class="blabel lv">Prompt visual Veo 3.1</div>
-        <div class="vprompt">Pantalla del computador con varios portales inmobiliarios abiertos en tabs. El corredor cierra el laptop con cansancio. Plano medio. Fundido a negro lento en los últimos 2 s.</div>
+        <div class="blabel lv">Veo 3.1 Visual Prompt (EN)</div>
+        <div class="vprompt">Wide shot of a bright open-plan real estate tech office. A professional closes a laptop with a sigh of exhaustion. Colleagues busy on calls and screens in background. Beautiful white interior, abundant natural daylight through tall windows. Slow fade to white begins at second 8.</div>
       </div>
       <div class="block">
-        <div class="blabel lvo">Narración — voz en off</div>
+        <div class="blabel lvo">Narración — voz en off (ES)</div>
         <div class="narr">
           <p>"...cuando lo que usted quiere es que su empresa cierre negocios? [PAUSA] Esto tiene solución."</p>
         </div>
@@ -288,12 +287,12 @@ footer a{color:var(--dorado-c);text-decoration:none}
     </div>
     <div class="clip-foot">
       <div class="foot-label">Texto en pantalla</div>
-      <div class="no-screen">— Sin texto. Fade to black.</div>
+      <div class="no-screen">— Sin texto. Fade to white.</div>
     </div>
   </div>
 </div>
 
-<!-- ════════════════════════════════════════ BLOQUE 2 -->
+<!-- ═══════════════════════ BLOQUE 2 -->
 <div class="bloque" id="b2">
   <div class="bloque-header">
     <div class="bloque-num">BLOQUE 2</div>
@@ -310,11 +309,11 @@ footer a{color:var(--dorado-c);text-decoration:none}
     </div>
     <div class="clip-body">
       <div class="block">
-        <div class="blabel lv">Prompt visual Veo 3.1</div>
-        <div class="vprompt">Fondo azul oscuro. El número "15" aparece grande en blanco con efecto de contador desde 0. Luego "HORAS" aparece debajo. La pantalla se queda estática 4 s con el número en pantalla completa.</div>
+        <div class="blabel lv">Veo 3.1 Visual Prompt (EN)</div>
+        <div class="vprompt">Deep navy blue background. Large white number counting up from 0 to 15 with a bold digital counter animation. The word "HOURS" appears below in clean sans-serif white. Screen stays static for 4 seconds with dramatic emphasis. Minimal, high-impact motion graphic. No camera movement.</div>
       </div>
       <div class="block">
-        <div class="blabel lvo">Narración — voz en off</div>
+        <div class="blabel lvo">Narración — voz en off (ES)</div>
         <div class="narr">
           <p>"Harvard Business Review lo midió: la industria inmobiliaria tarda en promedio más de quince horas en responder a un comprador."</p>
         </div>
@@ -336,11 +335,11 @@ Fuente: Harvard Business Review</div>
     </div>
     <div class="clip-body">
       <div class="block">
-        <div class="blabel lv">Prompt visual Veo 3.1</div>
-        <div class="vprompt">Fondo azul oscuro. El número "21×" entra desde abajo con efecto de impacto en dorado brillante. Vibra levemente 2 s. Flechas rojas apuntando hacia abajo aparecen alrededor del número. Permanece en pantalla los 10 s.</div>
+        <div class="blabel lv">Veo 3.1 Visual Prompt (EN)</div>
+        <div class="vprompt">Deep navy blue background. Bold golden "21×" enters from below with heavy impact effect, slight shake for 2 seconds. Bright red downward arrows appear surrounding the number. The graphic holds for the remaining 8 seconds with a subtle pulse glow. High-contrast, dramatic motion graphic.</div>
       </div>
       <div class="block">
-        <div class="blabel lvo">Narración — voz en off</div>
+        <div class="blabel lvo">Narración — voz en off (ES)</div>
         <div class="narr">
           <p>"Si no responde en los primeros cinco minutos, tiene veintiún veces menos probabilidad de cerrar esa venta."</p>
         </div>
@@ -361,11 +360,11 @@ Sin respuesta en los primeros 5 minutos</div>
     </div>
     <div class="clip-body">
       <div class="block">
-        <div class="blabel lv">Prompt visual Veo 3.1</div>
-        <div class="vprompt">Smartphone en mano. Chat WhatsApp con mensaje enviado a las 9:00 AM, sin respuesta. A los 5 s aparece en split-screen otro chat — el comprador escribe a la competencia. Close-up realista.</div>
+        <div class="blabel lv">Veo 3.1 Visual Prompt (EN)</div>
+        <div class="vprompt">Close-up of a modern smartphone lying on a white desk in a bright office. WhatsApp open: message sent at 9:00 AM, no reply indicator. At second 5, smooth split-screen transition: same buyer opens a competitor's chat and starts typing. Realistic, cinematic close-up. Natural daylight.</div>
       </div>
       <div class="block">
-        <div class="blabel lvo">Narración — voz en off</div>
+        <div class="blabel lvo">Narración — voz en off (ES)</div>
         <div class="narr">
           <p>"Mientras su empresa estaba en otra reunión, ese comprador calificado ya firmó con la competencia."</p>
         </div>
@@ -379,7 +378,7 @@ Sin respuesta en los primeros 5 minutos</div>
   </div>
 </div>
 
-<!-- ════════════════════════════════════════ BLOQUE 3 -->
+<!-- ═══════════════════════ BLOQUE 3 -->
 <div class="bloque" id="b3">
   <div class="bloque-header">
     <div class="bloque-num">BLOQUE 3</div>
@@ -396,11 +395,11 @@ Sin respuesta en los primeros 5 minutos</div>
     </div>
     <div class="clip-body">
       <div class="block">
-        <div class="blabel lv">Prompt visual Veo 3.1</div>
-        <div class="vprompt">Logo "LEX HOUSE AI" entrando desde la izquierda con resplandor dorado sobre fondo azul oscuro. Partículas doradas flotando. Skyline nocturno de Santiago en segundo plano desenfocado. Plano frontal estático 10 s.</div>
+        <div class="blabel lv">Veo 3.1 Visual Prompt (EN)</div>
+        <div class="vprompt">"LEX HOUSE AI" logo slides in from the left with a warm golden glow on a deep navy background. Floating golden particles drift slowly across the frame. Through massive floor-to-ceiling glass windows behind, a bright Santiago city skyline is visible in soft focus. Static frontal shot. 10 seconds.</div>
       </div>
       <div class="block">
-        <div class="blabel lvo">Narración — voz en off</div>
+        <div class="blabel lvo">Narración — voz en off (ES)</div>
         <div class="narr">
           <p>"Lex House AI. El portal tecnológico diseñado para inmobiliarias que quieren crecer sin aumentar el equipo."</p>
         </div>
@@ -422,11 +421,11 @@ www.lexhouse-ai.com</div>
     </div>
     <div class="clip-body">
       <div class="block">
-        <div class="blabel lv">Prompt visual Veo 3.1</div>
-        <div class="vprompt">Dashboard SaaS en monitor de alta resolución. Diseño azul oscuro con acentos dorados. Módulos aparecen con animación uno a uno (1 s c/u): ícono WhatsApp, teléfono, portales web, CRM, gráficos, candado dorado.</div>
+        <div class="blabel lv">Veo 3.1 Visual Prompt (EN)</div>
+        <div class="vprompt">Ultra-wide curved monitor on a white desk in a bright, airy tech-real estate office. A dark navy SaaS dashboard loads with gold accents. Module icons animate in one by one, each glowing briefly: WhatsApp icon, phone, portal icons, CRM chart, lock icon. Natural light from tall windows. 10 seconds.</div>
       </div>
       <div class="block">
-        <div class="blabel lvo">Narración — voz en off</div>
+        <div class="blabel lvo">Narración — voz en off (ES)</div>
         <div class="narr">
           <p>"Más de veinte herramientas de inteligencia artificial integradas: publicación masiva, calificación de leads, CRM, análisis y seguridad."</p>
         </div>
@@ -446,11 +445,11 @@ www.lexhouse-ai.com</div>
     </div>
     <div class="clip-body">
       <div class="block">
-        <div class="blabel lv">Prompt visual Veo 3.1</div>
-        <div class="vprompt">Texto en pantalla completa sobre fondo azul oscuro. Cuatro palabras aparecen línea por línea con fade-in (2 s c/u): "PUBLIQUE" · "CALIFIQUE" · "CONECTE" · "CIERRE". URL "www.lexhouse-ai.com" al final con resplandor dorado.</div>
+        <div class="blabel lv">Veo 3.1 Visual Prompt (EN)</div>
+        <div class="vprompt">Full-screen text motion graphic on deep navy background. Four bold white words fade in sequentially, one per line (2 seconds each): "PUBLISH" → "QUALIFY" → "CONNECT" → "CLOSE". Finally, "www.lexhouse-ai.com" appears centered in bright gold with a soft radiant glow. 10 seconds.</div>
       </div>
       <div class="block">
-        <div class="blabel lvo">Narración — voz en off</div>
+        <div class="blabel lvo">Narración — voz en off (ES)</div>
         <div class="narr">
           <p>"Suba su inventario. La plataforma califica, conecta y cierra en español chileno, veinticuatro horas al día."</p>
         </div>
@@ -464,7 +463,7 @@ www.lexhouse-ai.com</div>
   </div>
 </div>
 
-<!-- ════════════════════════════════════════ BLOQUE 4 -->
+<!-- ═══════════════════════ BLOQUE 4 -->
 <div class="bloque" id="b4">
   <div class="bloque-header">
     <div class="bloque-num">BLOQUE 4</div>
@@ -481,11 +480,11 @@ www.lexhouse-ai.com</div>
     </div>
     <div class="clip-body">
       <div class="block">
-        <div class="blabel lv">Prompt visual Veo 3.1</div>
-        <div class="vprompt">Wizard de publicación en pantalla. Paso 1 iluminado en la barra de progreso: seleccionar "Venta", tipo "Departamento". Cursor moviéndose con fluidez. Interfaz limpia y moderna. 10 s, sin corte.</div>
+        <div class="blabel lv">Veo 3.1 Visual Prompt (EN)</div>
+        <div class="vprompt">A real estate agent at a white desk in a bright minimalist tech office opens a property publishing wizard on a 27-inch monitor. Step 1 of 4 progress bar highlighted. Selecting "Sale" and "Apartment" with smooth cursor movements. City skyline visible through floor-to-ceiling glass windows behind. 10 seconds, no cut.</div>
       </div>
       <div class="block">
-        <div class="blabel lvo">Narración — voz en off</div>
+        <div class="blabel lvo">Narración — voz en off (ES)</div>
         <div class="narr">
           <p>"Subir una propiedad al portal tarda menos de quince minutos. El asistente guía cada paso del proceso."</p>
         </div>
@@ -505,11 +504,11 @@ www.lexhouse-ai.com</div>
     </div>
     <div class="clip-body">
       <div class="block">
-        <div class="blabel lv">Prompt visual Veo 3.1</div>
-        <div class="vprompt">Paso 3 del wizard: galería de fotos de un departamento moderno en Santiago cargándose con efecto de bento grid. Fotos apareciendo una a una en cuadrícula editorial. 10 s continuo.</div>
+        <div class="blabel lv">Veo 3.1 Visual Prompt (EN)</div>
+        <div class="vprompt">Step 3 of the wizard on a large monitor: an editorial bento grid photo gallery for a modern Santiago apartment loads dynamically. High-quality interior photos appear one by one in the grid layout. Bright white tech-real estate office in background, natural daylight. Clean, professional, elegant. 10 seconds.</div>
       </div>
       <div class="block">
-        <div class="blabel lvo">Narración — voz en off</div>
+        <div class="blabel lvo">Narración — voz en off (ES)</div>
         <div class="narr">
           <p>"Características, fotografías y precio. Sin formularios complejos. Cualquier agente lo hace desde el primer día."</p>
         </div>
@@ -517,7 +516,7 @@ www.lexhouse-ai.com</div>
     </div>
     <div class="clip-foot">
       <div class="foot-label">Texto en pantalla</div>
-      <div class="screen">PASO 3 / 4 — Fotos en galería editorial</div>
+      <div class="screen">PASO 3 / 4 — Galería de fotos editorial</div>
     </div>
   </div>
 
@@ -529,11 +528,11 @@ www.lexhouse-ai.com</div>
     </div>
     <div class="clip-body">
       <div class="block">
-        <div class="blabel lv">Prompt visual Veo 3.1</div>
-        <div class="vprompt">Paso 4 del wizard: campo "Descripción" vacío. Cursor parpadeando. Texto generándose solo con efecto de escritura IA en tiempo real, letra a letra, durante los 10 s completos.</div>
+        <div class="blabel lv">Veo 3.1 Visual Prompt (EN)</div>
+        <div class="vprompt">Tight close-up of a monitor screen in a bright white office. An empty description text field with a blinking cursor. AI-generated text types itself letter by letter in real time throughout the full 10 seconds — filling the field fluidly and naturally. Soft natural light from window reflected on screen.</div>
       </div>
       <div class="block">
-        <div class="blabel lvo">Narración — voz en off</div>
+        <div class="blabel lvo">Narración — voz en off (ES)</div>
         <div class="narr">
           <p>"La inteligencia artificial genera la descripción optimizada para ventas automáticamente. Sin redactar nada a mano."</p>
         </div>
@@ -553,11 +552,11 @@ www.lexhouse-ai.com</div>
     </div>
     <div class="clip-body">
       <div class="block">
-        <div class="blabel lv">Prompt visual Veo 3.1</div>
-        <div class="vprompt">Pantalla Publicador Masivo. Grid de 12 logos de portales inmobiliarios. Click en "Publicar en todos". Barra de progreso rápida. Logos cambian a fondo verde con checkmark dorado ✓ en 6 s. Efecto dominó satisfactorio.</div>
+        <div class="blabel lv">Veo 3.1 Visual Prompt (EN)</div>
+        <div class="vprompt">Large wall-mounted display in a bright open-plan tech office. Bulk Publisher interface shows a clean grid of 12 real estate portal logos. One click on "Publish to All". Fast progress bar sweeps across. All logos flip to green background with a golden checkmark ✓ in a satisfying domino wave. 10 seconds.</div>
       </div>
       <div class="block">
-        <div class="blabel lvo">Narración — voz en off</div>
+        <div class="blabel lvo">Narración — voz en off (ES)</div>
         <div class="narr">
           <p>"Un solo click publica en más de doce portales al mismo tiempo, con texto adaptado por IA para cada uno."</p>
         </div>
@@ -571,7 +570,7 @@ www.lexhouse-ai.com</div>
   </div>
 </div>
 
-<!-- ════════════════════════════════════════ BLOQUE 5 -->
+<!-- ═══════════════════════ BLOQUE 5 -->
 <div class="bloque" id="b5">
   <div class="bloque-header">
     <div class="bloque-num">BLOQUE 5</div>
@@ -588,13 +587,13 @@ www.lexhouse-ai.com</div>
     </div>
     <div class="clip-body">
       <div class="block">
-        <div class="blabel lv">Prompt visual Veo 3.1</div>
-        <div class="vprompt">Pantalla de celular mostrando WhatsApp a las 22:45. Comprador escribe: "¿Está disponible el depto en Vitacura?" Plano frontal del chat. Cursor parpadeando esperando respuesta. 10 s estático.</div>
+        <div class="blabel lv">Veo 3.1 Visual Prompt (EN)</div>
+        <div class="vprompt">Close-up of a modern iPhone on a white marble desk in a bright tech-real estate office. WhatsApp open: buyer types "Is the Vitacura apartment available?" at 2:45 PM. Blinking cursor waiting for reply. Soft natural light fills the background. Frontal static shot. 10 seconds.</div>
       </div>
       <div class="block">
-        <div class="blabel lvo">Narración — voz en off</div>
+        <div class="blabel lvo">Narración — voz en off (ES)</div>
         <div class="narr">
-          <p>"Son las once de la noche. Un comprador interesado en una de sus propiedades acaba de escribir."</p>
+          <p>"Son las tres de la tarde. Un comprador interesado en una de sus propiedades acaba de escribir."</p>
         </div>
       </div>
     </div>
@@ -612,11 +611,11 @@ www.lexhouse-ai.com</div>
     </div>
     <div class="clip-body">
       <div class="block">
-        <div class="blabel lv">Prompt visual Veo 3.1</div>
-        <div class="vprompt">Mismo chat WhatsApp. En 4 segundos aparece respuesta automática detallada: información de la propiedad, precio, disponibilidad. Burbuja de escritura IA aparece primero, luego el mensaje completo. 10 s.</div>
+        <div class="blabel lv">Veo 3.1 Visual Prompt (EN)</div>
+        <div class="vprompt">Same WhatsApp chat. Within 4 seconds, a typing bubble appears then a full AI response: property details, price, availability, and an offer to schedule a visit — all in natural Chilean Spanish. Clean phone close-up, white desk surface visible, bright ambient light. 10 seconds.</div>
       </div>
       <div class="block">
-        <div class="blabel lvo">Narración — voz en off</div>
+        <div class="blabel lvo">Narración — voz en off (ES)</div>
         <div class="narr">
           <p>"El Agente WhatsApp responde en segundos. En español chileno natural. Califica al comprador automáticamente."</p>
         </div>
@@ -636,11 +635,11 @@ www.lexhouse-ai.com</div>
     </div>
     <div class="clip-body">
       <div class="block">
-        <div class="blabel lv">Prompt visual Veo 3.1</div>
-        <div class="vprompt">El chat continúa: IA pregunta presupuesto, zona, plazo. Comprador responde. IA agenda visita automáticamente. En la pantalla del corredor aparece notificación: "Nueva visita agendada — Martes 10:00". 10 s.</div>
+        <div class="blabel lv">Veo 3.1 Visual Prompt (EN)</div>
+        <div class="vprompt">Continuing WhatsApp conversation on phone. AI messages ask budget and timeline; buyer replies. Visit confirmed automatically. On the agent's second monitor in background, a notification banner pops: "New visit scheduled — Tuesday 10:00 AM". Bright white office. 10 seconds.</div>
       </div>
       <div class="block">
-        <div class="blabel lvo">Narración — voz en off</div>
+        <div class="blabel lvo">Narración — voz en off (ES)</div>
         <div class="narr">
           <p>"Precalifica presupuesto, zona y urgencia. Agenda la visita. El lead queda registrado en el CRM automáticamente."</p>
         </div>
@@ -660,11 +659,11 @@ www.lexhouse-ai.com</div>
     </div>
     <div class="clip-body">
       <div class="block">
-        <div class="blabel lv">Prompt visual Veo 3.1</div>
-        <div class="vprompt">Visualización de onda de voz azul eléctrica sobre fondo oscuro. Teléfono recibiendo llamada, contestada automáticamente. Transcripción apareciendo en pantalla: "¿Cuándo le gustaría visitar la propiedad?" 10 s.</div>
+        <div class="blabel lv">Veo 3.1 Visual Prompt (EN)</div>
+        <div class="vprompt">Split-screen in a bright white tech office. Left side: electric blue sound wave visualization pulsing on a monitor. Right side: an iPhone receives an incoming call — answered automatically. Live transcription text appears on screen: "When would you like to visit the property?" Clean, modern, professional. 10 seconds.</div>
       </div>
       <div class="block">
-        <div class="blabel lvo">Narración — voz en off</div>
+        <div class="blabel lvo">Narración — voz en off (ES)</div>
         <div class="narr">
           <p>"El Agente de Voz atiende llamadas entrantes veinticuatro horas. Voz humana realista. Califica y agenda en la misma llamada."</p>
         </div>
@@ -677,7 +676,7 @@ www.lexhouse-ai.com</div>
   </div>
 </div>
 
-<!-- ════════════════════════════════════════ BLOQUE 6 -->
+<!-- ═══════════════════════ BLOQUE 6 -->
 <div class="bloque" id="b6">
   <div class="bloque-header">
     <div class="bloque-num">BLOQUE 6</div>
@@ -694,11 +693,11 @@ www.lexhouse-ai.com</div>
     </div>
     <div class="clip-body">
       <div class="block">
-        <div class="blabel lv">Prompt visual Veo 3.1</div>
-        <div class="vprompt">CRM en pantalla. Lista de leads con etiqueta roja "Sin actividad — 21 días". Panel de Reactivación a la derecha. Toggle "Activar campaña" encendiéndose en verde animado. 10 s.</div>
+        <div class="blabel lv">Veo 3.1 Visual Prompt (EN)</div>
+        <div class="vprompt">CRM interface on a large monitor in a bright minimalist real estate tech office. A list of leads tagged in red "No activity — 21 days" is visible. A Reactivation panel appears on the right. A green "Activate Campaign" toggle switches on with a smooth animated glow. White walls, daylight. 10 seconds.</div>
       </div>
       <div class="block">
-        <div class="blabel lvo">Narración — voz en off</div>
+        <div class="blabel lvo">Narración — voz en off (ES)</div>
         <div class="narr">
           <p>"Los leads que mostraron interés y no avanzaron… [PAUSA] el sistema los reactiva automáticamente."</p>
         </div>
@@ -718,11 +717,11 @@ www.lexhouse-ai.com</div>
     </div>
     <div class="clip-body">
       <div class="block">
-        <div class="blabel lv">Prompt visual Veo 3.1</div>
-        <div class="vprompt">WhatsApp API. Mensaje personalizado enviándose: "Hola Diego, sabemos que buscabas algo en Ñuñoa. Tenemos este departamento nuevo que podría interesarte." Foto de propiedad adjunta. 10 s.</div>
+        <div class="blabel lv">Veo 3.1 Visual Prompt (EN)</div>
+        <div class="vprompt">Close-up of a smartphone on a white desk. WhatsApp API message being sent: "Hi Diego, we know you were looking for something in Ñuñoa. We have a new apartment you might love." A property photo card attached below. Bright white office surface, natural daylight. 10 seconds.</div>
       </div>
       <div class="block">
-        <div class="blabel lvo">Narración — voz en off</div>
+        <div class="blabel lvo">Narración — voz en off (ES)</div>
         <div class="narr">
           <p>"WhatsApp API oficial y email con el nombre del comprador y propiedades que se ajustan exactamente a su perfil."</p>
         </div>
@@ -743,11 +742,11 @@ Sin spam genérico — Con datos reales de cada lead</div>
     </div>
     <div class="clip-body">
       <div class="block">
-        <div class="blabel lv">Prompt visual Veo 3.1</div>
-        <div class="vprompt">Panel de métricas animándose con conteo numérico: "Enviados: 45" → "Abiertos: 31" → "Respondieron: 9" → "Agendaron: 4". Gráfico de barras verde apareciendo al final. 10 s.</div>
+        <div class="blabel lv">Veo 3.1 Visual Prompt (EN)</div>
+        <div class="vprompt">Analytics dashboard on a large monitor in a bright white open-plan tech office. Metric counters animate upward one by one: "Sent: 45" → "Opened: 31" → "Replied: 9" → "Visit scheduled: 4". A green bar chart grows at the end. Clean, data-driven aesthetic. Daylight. 10 seconds.</div>
       </div>
       <div class="block">
-        <div class="blabel lvo">Narración — voz en off</div>
+        <div class="blabel lvo">Narración — voz en off (ES)</div>
         <div class="narr">
           <p>"Resultado: entre quince y veintitrés por ciento de esos leads fríos vuelven a consultar. Ventas recuperadas automáticamente."</p>
         </div>
@@ -760,7 +759,7 @@ Sin spam genérico — Con datos reales de cada lead</div>
   </div>
 </div>
 
-<!-- ════════════════════════════════════════ BLOQUE 7 -->
+<!-- ═══════════════════════ BLOQUE 7 -->
 <div class="bloque" id="b7">
   <div class="bloque-header">
     <div class="bloque-num">BLOQUE 7</div>
@@ -777,11 +776,11 @@ Sin spam genérico — Con datos reales de cada lead</div>
     </div>
     <div class="clip-body">
       <div class="block">
-        <div class="blabel lv">Prompt visual Veo 3.1</div>
-        <div class="vprompt">CRM inmobiliario abierto. Ficha de lead visible: "Sebastián V. — 2 dormitorios, Providencia, $120–150M CLP, listo en 90 días". Datos del perfil en pantalla limpia. 10 s estático con zoom lento.</div>
+        <div class="blabel lv">Veo 3.1 Visual Prompt (EN)</div>
+        <div class="vprompt">34-inch curved ultrawide monitor on a white desk in a luminous real estate tech office. CRM software open: lead profile visible — "Sebastian V. — 2BR, Providencia, $120–150M CLP, ready in 90 days." Slow zoom into the screen. Floor-to-ceiling windows with morning light behind. 10 seconds.</div>
       </div>
       <div class="block">
-        <div class="blabel lvo">Narración — voz en off</div>
+        <div class="blabel lvo">Narración — voz en off (ES)</div>
         <div class="narr">
           <p>"Cada lead tiene su perfil completo en el CRM: zona preferida, tipo de propiedad, presupuesto y plazo de compra."</p>
         </div>
@@ -801,11 +800,11 @@ Sin spam genérico — Con datos reales de cada lead</div>
     </div>
     <div class="clip-body">
       <div class="block">
-        <div class="blabel lv">Prompt visual Veo 3.1</div>
-        <div class="vprompt">Animación de matching. Líneas animadas conectando el perfil del lead con tarjetas de propiedades del inventario. Badges apareciendo: "92% match" en verde brillante, "87% match" en azul, "74% match" en gris. 10 s.</div>
+        <div class="blabel lv">Veo 3.1 Visual Prompt (EN)</div>
+        <div class="vprompt">Animated AI matching visualization on a large screen in a bright white office. Glowing lines connect the lead profile card to property inventory cards. Percentage badges pop in sequentially: "92% match" in bright green, "87% match" in blue, "74% match" in gray. Soft white office visible in background. 10 seconds.</div>
       </div>
       <div class="block">
-        <div class="blabel lvo">Narración — voz en off</div>
+        <div class="blabel lvo">Narración — voz en off (ES)</div>
         <div class="narr">
           <p>"La plataforma cruza ese perfil con todo el inventario y muestra el porcentaje de compatibilidad de cada propiedad automáticamente."</p>
         </div>
@@ -825,11 +824,11 @@ Sin spam genérico — Con datos reales de cada lead</div>
     </div>
     <div class="clip-body">
       <div class="block">
-        <div class="blabel lv">Prompt visual Veo 3.1</div>
-        <div class="vprompt">Agente hace click en la propiedad con 92% match. Ficha enviándose al lead por WhatsApp con animación. Celular del lead recibe la ficha con imagen y precio. Notificación verde "Enviado" en la pantalla del agente. 10 s.</div>
+        <div class="blabel lv">Veo 3.1 Visual Prompt (EN)</div>
+        <div class="vprompt">Real estate agent in a bright white office clicks on the 92% match property card. An animated property card flies out as a WhatsApp message. Split-screen: the lead's iPhone receives the property with photo and price. Green "Sent" confirmation appears on the agent's screen. Daylight. 10 seconds.</div>
       </div>
       <div class="block">
-        <div class="blabel lvo">Narración — voz en off</div>
+        <div class="blabel lvo">Narración — voz en off (ES)</div>
         <div class="narr">
           <p>"El agente envía la ficha más compatible al comprador con un solo click. Sin adivinar. Con datos concretos."</p>
         </div>
@@ -842,7 +841,7 @@ Sin spam genérico — Con datos reales de cada lead</div>
   </div>
 </div>
 
-<!-- ════════════════════════════════════════ BLOQUE 8 -->
+<!-- ═══════════════════════ BLOQUE 8 -->
 <div class="bloque" id="b8">
   <div class="bloque-header">
     <div class="bloque-num">BLOQUE 8</div>
@@ -859,11 +858,11 @@ Sin spam genérico — Con datos reales de cada lead</div>
     </div>
     <div class="clip-body">
       <div class="block">
-        <div class="blabel lv">Prompt visual Veo 3.1</div>
-        <div class="vprompt">Ficha de propiedad premium en el Marketplace. Galería bento editorial de fotos de departamento moderno en Las Condes. Precio en UF visible. URL única en la barra del navegador. Scroll lento hacia abajo durante los 10 s.</div>
+        <div class="blabel lv">Veo 3.1 Visual Prompt (EN)</div>
+        <div class="vprompt">Premium property listing page displayed on a large monitor in a bright white tech office. Editorial bento grid photo gallery of a luxury apartment in Las Condes: sunlit interiors, modern kitchen, panoramic view. UF price visible, property features listed. Smooth slow scroll downward. 10 seconds.</div>
       </div>
       <div class="block">
-        <div class="blabel lvo">Narración — voz en off</div>
+        <div class="blabel lvo">Narración — voz en off (ES)</div>
         <div class="narr">
           <p>"La ficha de cada propiedad es el centro de la operación: galería editorial, precio, calculadora de inversión embebida."</p>
         </div>
@@ -884,11 +883,11 @@ Indexado en Google</div>
     </div>
     <div class="clip-body">
       <div class="block">
-        <div class="blabel lv">Prompt visual Veo 3.1</div>
-        <div class="vprompt">Click en botón "📅 Agendar Visita". Calendario desplegándose elegante. Comprador selecciona martes 15. Confirmación en pantalla. En celular del agente aparece notificación "Nueva visita agendada · Martes · 10:00". 10 s.</div>
+        <div class="blabel lv">Veo 3.1 Visual Prompt (EN)</div>
+        <div class="vprompt">On the property listing page, a click on the "Schedule Visit" button opens an elegant calendar picker. The buyer selects Tuesday the 15th. A confirmation screen appears. Simultaneously, on a second monitor behind, a notification pops: "New visit scheduled · Tuesday · 10:00 AM". Bright white office. 10 seconds.</div>
       </div>
       <div class="block">
-        <div class="blabel lvo">Narración — voz en off</div>
+        <div class="blabel lvo">Narración — voz en off (ES)</div>
         <div class="narr">
           <p>"El comprador agenda visita directamente desde la ficha. La confirmación llega al agente en el instante."</p>
         </div>
@@ -908,11 +907,11 @@ Indexado en Google</div>
     </div>
     <div class="clip-body">
       <div class="block">
-        <div class="blabel lv">Prompt visual Veo 3.1</div>
-        <div class="vprompt">Click en "🛡️ Hacer Oferta Formal". Formulario paso 1: nombre, RUT, email, tipo de financiamiento. Luego paso 2: monto "$145.000.000 CLP", plazo 60 días, condiciones. Botón "Enviar Oferta" en azul al final. 10 s.</div>
+        <div class="blabel lv">Veo 3.1 Visual Prompt (EN)</div>
+        <div class="vprompt">"Make Formal Offer" button clicked on the property page. Clean two-step form slides in: Step 1 — buyer name, ID, email, financing type. Step 2 — offer amount "$145,000,000 CLP", 60-day timeline, conditions. Blue "Submit Offer" button at bottom. Bright white office environment. 10 seconds.</div>
       </div>
       <div class="block">
-        <div class="blabel lvo">Narración — voz en off</div>
+        <div class="blabel lvo">Narración — voz en off (ES)</div>
         <div class="narr">
           <p>"O hace una oferta formal: datos del comprador, monto y condiciones en dos pasos directamente desde la propiedad."</p>
         </div>
@@ -933,11 +932,11 @@ Oferta en CRM del agente en segundos</div>
     </div>
     <div class="clip-body">
       <div class="block">
-        <div class="blabel lv">Prompt visual Veo 3.1</div>
-        <div class="vprompt">Click en "📄 Generar Acuerdo de Compraventa". Documento llenándose automáticamente con los datos de ambas partes en 5 s. Botón "Descargar PDF" aparece en dorado. Click. PDF descargándose con animación. 10 s.</div>
+        <div class="blabel lv">Veo 3.1 Visual Prompt (EN)</div>
+        <div class="vprompt">"Generate Purchase Agreement" button clicked. A legal document auto-fills with buyer and seller data in 5 seconds — names, property address, price, conditions. A glowing golden "Download PDF" button appears. Click. PDF file downloads with smooth animation. White marble desk, natural daylight. 10 seconds.</div>
       </div>
       <div class="block">
-        <div class="blabel lvo">Narración — voz en off</div>
+        <div class="blabel lvo">Narración — voz en off (ES)</div>
         <div class="narr">
           <p>"Aceptada la oferta, el acuerdo de compraventa se genera automáticamente con todos los datos y se descarga en PDF."</p>
         </div>
@@ -951,7 +950,7 @@ Guardado en Bóveda Legal cifrada</div>
   </div>
 </div>
 
-<!-- ════════════════════════════════════════ BLOQUE 9 -->
+<!-- ═══════════════════════ BLOQUE 9 -->
 <div class="bloque" id="b9">
   <div class="bloque-header">
     <div class="bloque-num">BLOQUE 9</div>
@@ -968,11 +967,11 @@ Guardado en Bóveda Legal cifrada</div>
     </div>
     <div class="clip-body">
       <div class="block">
-        <div class="blabel lv">Prompt visual Veo 3.1</div>
-        <div class="vprompt">Dashboard de Análisis de Inversión. Métricas apareciendo con efecto de conteo numérico: "Cap Rate: 5.8%", "Rentabilidad: 6.2%", "Flujo de caja: $650.000/mes", "Payback: 16.2 años". Gráficos azul y dorado animados. 10 s.</div>
+        <div class="blabel lv">Veo 3.1 Visual Prompt (EN)</div>
+        <div class="vprompt">Investment analysis dashboard on a 27-inch monitor in a bright white tech-real estate office. Financial metrics count up in real time: "Cap Rate: 5.8%", "Annual Return: 6.2%", "Monthly Cash Flow: $650,000", "Payback: 16.2 years". Animated navy and gold bar charts. Daylight from tall windows. 10 seconds.</div>
       </div>
       <div class="block">
-        <div class="blabel lvo">Narración — voz en off</div>
+        <div class="blabel lvo">Narración — voz en off (ES)</div>
         <div class="narr">
           <p>"El Análisis de Inversión calcula cap rate, rentabilidad, flujo de caja y período de recuperación en segundos."</p>
         </div>
@@ -993,11 +992,11 @@ Cap Rate · Rentabilidad · Flujo de caja · Payback</div>
     </div>
     <div class="clip-body">
       <div class="block">
-        <div class="blabel lv">Prompt visual Veo 3.1</div>
-        <div class="vprompt">Botón "Descargar informe PDF" pulsando en dorado. PDF generándose con animación. Agente desde su computador enviando el documento al cliente por WhatsApp. Celular del cliente recibe el PDF. 10 s.</div>
+        <div class="blabel lv">Veo 3.1 Visual Prompt (EN)</div>
+        <div class="vprompt">A real estate agent in a bright white office clicks a glowing golden "Download PDF Report" button. A PDF generates with a smooth animation. The agent picks up their phone and shares the document via WhatsApp. Split-screen: the client's iPhone receives the PDF file with property report. 10 seconds.</div>
       </div>
       <div class="block">
-        <div class="blabel lvo">Narración — voz en off</div>
+        <div class="blabel lvo">Narración — voz en off (ES)</div>
         <div class="narr">
           <p>"El informe se descarga en PDF y se envía al comprador en el momento. De 'debería rentar bien' a datos concretos que cierran la venta."</p>
         </div>
@@ -1017,11 +1016,11 @@ Cap Rate · Rentabilidad · Flujo de caja · Payback</div>
     </div>
     <div class="clip-body">
       <div class="block">
-        <div class="blabel lv">Prompt visual Veo 3.1</div>
-        <div class="vprompt">Transición rápida (3 s c/u): Valuación Inteligente con precio y comparables de la zona → Contrato X-Ray con cláusula en rojo marcada "RIESGO ALTO". Ambas pantallas muestran botón "Descargar PDF" en dorado. 10 s total.</div>
+        <div class="blabel lv">Veo 3.1 Visual Prompt (EN)</div>
+        <div class="vprompt">Quick 3-second cuts between two screens on a white desk in a bright office. Screen 1: Intelligent Valuation dashboard showing property price vs. comparable listings on a map. Screen 2: Contract X-Ray with a clause highlighted in red "HIGH RISK". Both screens display a glowing golden "Download PDF" button. 10 seconds total.</div>
       </div>
       <div class="block">
-        <div class="blabel lvo">Narración — voz en off</div>
+        <div class="blabel lvo">Narración — voz en off (ES)</div>
         <div class="narr">
           <p>"Valuación inteligente y Contrato X-Ray también generan informes descargables. Cada reunión respaldada con datos reales."</p>
         </div>
@@ -1035,7 +1034,7 @@ Cap Rate · Rentabilidad · Flujo de caja · Payback</div>
   </div>
 </div>
 
-<!-- ════════════════════════════════════════ BLOQUE 10 -->
+<!-- ═══════════════════════ BLOQUE 10 -->
 <div class="bloque" id="b10">
   <div class="bloque-header">
     <div class="bloque-num">BLOQUE 10</div>
@@ -1052,11 +1051,11 @@ Cap Rate · Rentabilidad · Flujo de caja · Payback</div>
     </div>
     <div class="clip-body">
       <div class="block">
-        <div class="blabel lv">Prompt visual Veo 3.1</div>
-        <div class="vprompt">Click en "Generar Reel". Barra de progreso 3 s. Video 9:16 aparece: fotos de penthouse con transiciones cinematográficas, overlay de precio "$280.000.000 CLP", logo de empresa. Formato vertical en celular. 10 s.</div>
+        <div class="blabel lv">Veo 3.1 Visual Prompt (EN)</div>
+        <div class="vprompt">Real estate agent in a bright white office selects a luxury penthouse from the property list. Clicks "Generate Reel". A 3-second animated progress bar. A 9:16 vertical video preview appears on screen: cinematic property shots with smooth transitions, price overlay "$280,000,000 CLP", company logo in corner. Shown on a phone in vertical format. 10 seconds.</div>
       </div>
       <div class="block">
-        <div class="blabel lvo">Narración — voz en off</div>
+        <div class="blabel lvo">Narración — voz en off (ES)</div>
         <div class="narr">
           <p>"Los videos para Instagram y TikTok se generan en menos de diez minutos con las fotos de cualquier propiedad."</p>
         </div>
@@ -1065,7 +1064,7 @@ Cap Rate · Rentabilidad · Flujo de caja · Payback</div>
     <div class="clip-foot">
       <div class="foot-label">Texto en pantalla</div>
       <div class="screen">REELS IA  ·  Video 9:16 en 10 minutos  ·  $0 adicional
-vs. 4 horas de edición manual o $80–200K CLP con videógrafo</div>
+vs. 4 horas de edición o $80–200K CLP con videógrafo</div>
     </div>
   </div>
 
@@ -1077,11 +1076,11 @@ vs. 4 horas de edición manual o $80–200K CLP con videógrafo</div>
     </div>
     <div class="clip-body">
       <div class="block">
-        <div class="blabel lv">Prompt visual Veo 3.1</div>
-        <div class="vprompt">Caja fuerte digital dorada abriéndose. Dentro, íconos de documentos (escritura, contrato, certificado) con candados y texto "AES-256". Texto "Zero-Knowledge" y sello "Ley 19.628 Chile + GDPR" aparecen. 10 s.</div>
+        <div class="blabel lv">Veo 3.1 Visual Prompt (EN)</div>
+        <div class="vprompt">A glowing gold digital vault opens in a bright white minimalist office. Inside: floating document icons (deed, contract, certificate) with gold padlock symbols and "AES-256" text. "Zero-Knowledge Architecture" text overlay fades in. A compliance seal appears: "Ley 19.628 Chile + GDPR". Clean white background, premium feel. 10 seconds.</div>
       </div>
       <div class="block">
-        <div class="blabel lvo">Narración — voz en off</div>
+        <div class="blabel lvo">Narración — voz en off (ES)</div>
         <div class="narr">
           <p>"Los documentos de cada operación están cifrados con AES-256. Zero-knowledge: nadie puede acceder sin la clave del corredor."</p>
         </div>
@@ -1095,7 +1094,7 @@ Cumple Ley 19.628 Chile  ·  GDPR</div>
   </div>
 </div>
 
-<!-- ════════════════════════════════════════ BLOQUE 11 -->
+<!-- ═══════════════════════ BLOQUE 11 -->
 <div class="bloque" id="b11">
   <div class="bloque-header">
     <div class="bloque-num">BLOQUE 11</div>
@@ -1112,11 +1111,11 @@ Cumple Ley 19.628 Chile  ·  GDPR</div>
     </div>
     <div class="clip-body">
       <div class="block">
-        <div class="blabel lv">Prompt visual Veo 3.1</div>
-        <div class="vprompt">Infografía animada fondo azul oscuro. Columna izquierda gris aparece: "Sin IA: 100 leads → 2 cierres → $3.000.000". Columna derecha dorada aparece: "Con IA: 350 leads → 8 cierres → $12.000.000". 10 s.</div>
+        <div class="blabel lv">Veo 3.1 Visual Prompt (EN)</div>
+        <div class="vprompt">Animated comparison infographic on deep navy background. Left column in muted gray fades in: "Without AI: 100 leads → 2 closings → $3,000,000 CLP". Right column in bright gold fades in: "With AI: 350 leads → 8 closings → $12,000,000 CLP". Bold, clean sans-serif typography. 10 seconds.</div>
       </div>
       <div class="block">
-        <div class="blabel lvo">Narración — voz en off</div>
+        <div class="blabel lvo">Narración — voz en off (ES)</div>
         <div class="narr">
           <p>"Los números para una agencia con cinco agentes. Sin la plataforma: dos cierres al mes y tres millones en comisiones."</p>
         </div>
@@ -1137,11 +1136,11 @@ CON LEX HOUSE AI:  350 leads →  8 cierres → $12.000.000 CLP / mes</div>
     </div>
     <div class="clip-body">
       <div class="block">
-        <div class="blabel lv">Prompt visual Veo 3.1</div>
-        <div class="vprompt">El número "+$9.000.000 CLP/mes" aparece en el centro de la pantalla con efecto de conteo animado en dorado brillante. Resplandor dorado expandiéndose. Flechas verdes ascendentes alrededor. 10 s estático con brillo.</div>
+        <div class="blabel lv">Veo 3.1 Visual Prompt (EN)</div>
+        <div class="vprompt">Deep navy background. The number "+$9,000,000 CLP/month" appears centered with a dramatic animated gold counter. A radiant golden glow expands outward from the number. Multiple bright green upward arrows surround it. The graphic holds for 8 seconds with a shimmering, pulsing gold effect. High impact. 10 seconds.</div>
       </div>
       <div class="block">
-        <div class="blabel lvo">Narración — voz en off</div>
+        <div class="blabel lvo">Narración — voz en off (ES)</div>
         <div class="narr">
           <p>"Con Lex House AI: ocho cierres, doce millones en comisiones. Nueve millones extra al mes sin contratar a nadie."</p>
         </div>
@@ -1162,11 +1161,11 @@ Escenario conservador · Agencia 5 agentes</div>
     </div>
     <div class="clip-body">
       <div class="block">
-        <div class="blabel lv">Prompt visual Veo 3.1</div>
-        <div class="vprompt">Equipo de inmobiliaria (3–4 personas) mirando pantalla con métricas positivas. Expresiones de satisfacción y confianza. Oficina moderna bien iluminada. Plano medio grupal, cámara leve paneo de izquierda a derecha. 10 s.</div>
+        <div class="blabel lv">Veo 3.1 Visual Prompt (EN)</div>
+        <div class="vprompt">Wide shot of a sleek white open-plan real estate tech office. A diverse team of four professionals in smart-casual attire look at a large wall-mounted display showing positive metrics. Confident smiles. Abundant natural daylight through floor-to-ceiling windows. Camera slowly pans right. Premium atmosphere. 10 seconds.</div>
       </div>
       <div class="block">
-        <div class="blabel lvo">Narración — voz en off</div>
+        <div class="blabel lvo">Narración — voz en off (ES)</div>
         <div class="narr">
           <p>"Veinticuatro horas semanales devueltas a su equipo. El sistema se paga desde el primer cierre adicional del mes."</p>
         </div>
@@ -1180,7 +1179,7 @@ El sistema se paga en el Día 1</div>
   </div>
 </div>
 
-<!-- ════════════════════════════════════════ BLOQUE 12 -->
+<!-- ═══════════════════════ BLOQUE 12 -->
 <div class="bloque" id="b12">
   <div class="bloque-header">
     <div class="bloque-num">BLOQUE 12</div>
@@ -1197,11 +1196,11 @@ El sistema se paga en el Día 1</div>
     </div>
     <div class="clip-body">
       <div class="block">
-        <div class="blabel lv">Prompt visual Veo 3.1</div>
-        <div class="vprompt">URL "www.lexhouse-ai.com" centrada en pantalla azul oscuro. Tipografía blanca limpia, bold. Partículas doradas flotando. Logo Lex House AI pulsando suavemente. Tagline "Tecnología que cierra negocios" con fade-in lento. Música crescendo y fade out en últimos 3 s.</div>
+        <div class="blabel lv">Veo 3.1 Visual Prompt (EN)</div>
+        <div class="vprompt">"www.lexhouse-ai.com" centered on a deep navy background in clean bold white typography. Slow golden particles drift across the frame. The Lex House AI logo pulses softly below. The tagline "Technology that closes deals" fades in gracefully. Background music swells and fades in the last 3 seconds. Elegant, aspirational, cinematic finish. 10 seconds.</div>
       </div>
       <div class="block">
-        <div class="blabel lvo">Narración — voz en off</div>
+        <div class="blabel lvo">Narración — voz en off (ES)</div>
         <div class="narr">
           <p>"Visítenos en www.lexhouse-ai.com. Su inventario merece más visibilidad. Lex House AI. Tecnología que cierra negocios."</p>
         </div>
@@ -1218,9 +1217,9 @@ LEX HOUSE AI  ·  Tecnología que cierra negocios
 </div>
 
 
-<!-- ════════════ VERSIONES CORTAS ADAPTADAS A VEO 3.1 -->
+<!-- ════════════ VERSIONES CORTAS -->
 <div class="short-divider">
-  <hr/><h2>Versiones Cortas — También en clips de 10 s</h2><hr/>
+  <hr/><h2>Versiones Cortas — Clips de 10 s · Prompts en inglés</h2><hr/>
 </div>
 
 <div class="short-grid">
@@ -1235,9 +1234,9 @@ LEX HOUSE AI  ·  Tecnología que cierra negocios
     </div>
     <div class="short-card-b">
       <div class="scopy">
-        <p><strong>Clip A (0–10 s):</strong> "La industria inmobiliaria tarda 15 horas en responder un lead. Con Lex House AI: menos de 60 segundos." <em>(18 palabras)</em></p>
-        <p><strong>Clip B (10–20 s):</strong> "Publique en doce portales simultáneos. Califique leads con IA. Conecte compradores con sus propiedades por porcentaje de match." <em>(21 palabras)</em></p>
-        <p><strong>Clip C (20–30 s):</strong> "Oferta formal, acuerdo de compraventa descargable, informes de análisis en PDF. Todo en un portal. www.lexhouse-ai.com" <em>(18 palabras)</em></p>
+        <p><strong>Clip A — Prompt:</strong> "Two real estate professionals at white desks in a bright minimalist tech office, looking at unanswered lead notifications on large curved monitors. Natural daylight, glass walls, city view."</p>
+        <p><strong>Clip B — Prompt:</strong> "Animated split-screen on deep navy: left side in gray '100 leads / 2 closings', right side in gold '350 leads / 8 closings'. Clean bold typography. 10 seconds."</p>
+        <p><strong>Clip C — Prompt:</strong> "'www.lexhouse-ai.com' centered on navy, bold white text, golden particles, Lex House AI logo pulsing. Tagline fades in. Elegant finish."</p>
       </div>
     </div>
   </div>
@@ -1252,9 +1251,9 @@ LEX HOUSE AI  ·  Tecnología que cierra negocios
     </div>
     <div class="short-card-b">
       <div class="scopy">
-        <p><strong>Clip A (0–10 s):</strong> "¿Su inmobiliaria sigue publicando a mano en cada portal? Hay una mejor forma." <em>(14 palabras + pausa)</em></p>
-        <p><strong>Clip B (10–20 s):</strong> "Lex House AI: un click publica en doce portales. La IA califica cada lead y los conecta con sus propiedades." <em>(21 palabras)</em></p>
-        <p><strong>Clip C (20–30 s):</strong> "Oferta formal, compraventa descargable, análisis en PDF. Agencias reportan hasta nueve millones extra al mes. lexhouse-ai.com" <em>(18 palabras)</em></p>
+        <p><strong>Clip A — Prompt:</strong> "Vertical 9:16. Close-up of iPhone on white marble desk showing 12 unread WhatsApp messages. Bright real estate tech office background. Slow zoom in. 10 seconds."</p>
+        <p><strong>Clip B — Prompt:</strong> "Vertical 9:16. Wall-mounted display in white office: 12 portal logos all turning green with gold checkmarks simultaneously. Fast, satisfying domino effect. 10 seconds."</p>
+        <p><strong>Clip C — Prompt:</strong> "Vertical 9:16. '+$9,000,000 CLP/month' golden counter animation on navy background. Glowing radiant effect expanding. 10 seconds."</p>
       </div>
     </div>
   </div>
@@ -1263,13 +1262,13 @@ LEX HOUSE AI  ·  Tecnología que cierra negocios
     <div class="short-card-h">
       <div class="p-icon i-wa" style="color:#fff;font-size:16px">📱</div>
       <div>
-        <div class="pn">WhatsApp / Follow-up — 1 clip × 10 s</div>
+        <div class="pn">WhatsApp Follow-up — 1 clip × 10 s</div>
         <div class="pd">Formato 9:16 · Post-reunión</div>
       </div>
     </div>
     <div class="short-card-b">
       <div class="scopy">
-        <p><strong>Clip único (0–10 s):</strong> "Le mostramos cómo Lex House AI puede publicar su inventario en doce portales y calificar leads automáticamente. www.lexhouse-ai.com" <em>(20 palabras)</em></p>
+        <p><strong>Prompt único:</strong> "Vertical 9:16. Confident real estate team in a bright white office smiling at a large screen showing positive metrics. Natural daylight. 'www.lexhouse-ai.com' text overlay fades in at second 7. 10 seconds."</p>
       </div>
     </div>
   </div>
@@ -1279,13 +1278,13 @@ LEX HOUSE AI  ·  Tecnología que cierra negocios
       <div class="p-icon i-em" style="color:#fff;font-size:16px">✉</div>
       <div>
         <div class="pn">Email Comercial — 2 clips × 10 s = 20 s</div>
-        <div class="pd">Demo en video para adjuntar al email</div>
+        <div class="pd">Video adjunto a propuesta comercial</div>
       </div>
     </div>
     <div class="short-card-b">
       <div class="scopy">
-        <p><strong>Clip A (0–10 s):</strong> "Estimado equipo, Lex House AI publica su inventario en doce portales, califica leads con IA y los conecta con sus propiedades." <em>(22 palabras)</em></p>
-        <p><strong>Clip B (10–20 s):</strong> "Oferta formal, acuerdo de compraventa, análisis descargables. Todo desde un portal. ¿30 minutos de demo esta semana? www.lexhouse-ai.com" <em>(19 palabras)</em></p>
+        <p><strong>Clip A — Prompt:</strong> "Professional real estate agent at white desk clicks once — 12 portal logos on a wall display all light up green simultaneously. Bright white office. Daylight. Satisfied expression. 10 seconds."</p>
+        <p><strong>Clip B — Prompt:</strong> "Animated AI matching visualization: glowing lines connect lead profile to property cards with percentage badges (92%, 87%, 74%). Bright office visible behind. Then 'www.lexhouse-ai.com' fades in gold. 10 seconds."</p>
       </div>
     </div>
   </div>
@@ -1293,7 +1292,7 @@ LEX HOUSE AI  ·  Tecnología que cierra negocios
 </div>
 
 
-<!-- ════════════ ESPECIFICACIONES VEO 3.1 -->
+<!-- ════════════ ESPECIFICACIONES -->
 <div class="short-divider">
   <hr/><h2>Especificaciones Técnicas Veo 3.1</h2><hr/>
 </div>
@@ -1305,21 +1304,20 @@ LEX HOUSE AI  ·  Tecnología que cierra negocios
     <tbody>
       <tr><td>Duración por clip</td><td>10 segundos exactos — límite máximo de Veo 3.1 por generación</td></tr>
       <tr><td>Total clips</td><td>36 clips × 10 s = 360 s = 6:00 minutos</td></tr>
+      <tr><td>Idioma prompts</td><td>Inglés — mejor comprensión del modelo. Narración y textos en pantalla: español</td></tr>
       <tr><td>Palabras por clip</td><td>≤ 22 palabras — a 130 ppm (voz en off profesional) caben 21.6 palabras en 10 s</td></tr>
+      <tr><td>Escenario visual global</td><td>Avant-garde tech company + luxury real estate. White minimalist open-plan office. Floor-to-ceiling windows, natural daylight. White marble desks, curved monitors. Smart-casual professionals.</td></tr>
       <tr><td>Resolución principal</td><td>1920 × 1080 px (16:9) — YouTube, LinkedIn, presentaciones</td></tr>
       <tr><td>Resolución Reels</td><td>1080 × 1920 px (9:16) — TikTok, Instagram, WhatsApp</td></tr>
       <tr><td>FPS</td><td>24 fps (cinematográfico) recomendado</td></tr>
-      <tr><td>Flujo de producción</td><td>Generar clip → grabar narración sincronizada → agregar texto en pantalla → editar secuencia completa</td></tr>
-      <tr><td>Estilo visual</td><td>Realista + motion graphics moderno. Corporativo, premium, tecnológico, confiable</td></tr>
       <tr><td>Color primario</td><td>#003DA5 — Azul Lex House</td></tr>
-      <tr><td>Color secundario</td><td>#D4AF37 — Dorado (datos de impacto y CTA)</td></tr>
-      <tr><td>Color fondo oscuro</td><td>#001f5b — Azul noche (bloques de datos y cifras)</td></tr>
-      <tr><td>Idioma narración</td><td>Español chileno — tono corporativo, propositivo, claro</td></tr>
-      <tr><td>Velocidad locución</td><td>~130 palabras/minuto — sin apresuramiento. Pausas dramáticas marcadas en el guion con [PAUSA]</td></tr>
-      <tr><td>Subtítulos</td><td>Obligatorios. Agregar en edición. Mejoran retención +40% y permiten visualización sin audio</td></tr>
-      <tr><td>Música</td><td>Instrumental corporativa moderna. Subir volumen gradualmente en Bloque 11–12</td></tr>
-      <tr><td>Transiciones entre clips</td><td>Corte directo dentro del mismo bloque. Fade de 0.5 s entre bloques</td></tr>
-      <tr><td>URL final (Clip 36)</td><td>www.lexhouse-ai.com — visible mínimo 5 segundos en pantalla completa</td></tr>
+      <tr><td>Color secundario</td><td>#D4AF37 — Dorado (datos de impacto, CTAs, números clave)</td></tr>
+      <tr><td>Color fondo oscuro</td><td>#001f5b — Azul noche (bloques de datos B2–B3, B11–B12)</td></tr>
+      <tr><td>Velocidad locución</td><td>~130 palabras/minuto. [PAUSA] = pausa dramática de ~1 s</td></tr>
+      <tr><td>Subtítulos</td><td>Obligatorios — agregar en post-producción. +40% retención y visualización sin audio</td></tr>
+      <tr><td>Música</td><td>Instrumental corporativa moderna, sin letra. Crescendo gradual desde clip 33 hasta clip 36</td></tr>
+      <tr><td>Transiciones</td><td>Corte directo dentro del mismo bloque. Fade 0.5 s entre bloques distintos</td></tr>
+      <tr><td>URL final (clip 36)</td><td>www.lexhouse-ai.com visible mínimo 5 s en pantalla completa</td></tr>
     </tbody>
   </table>
 </div>
@@ -1328,7 +1326,7 @@ LEX HOUSE AI  ·  Tecnología que cierra negocios
 
 <footer>
   <p>Lex House Intelligence Inc. &mdash; <a href="https://www.lexhouse-ai.com">www.lexhouse-ai.com</a></p>
-  <p style="margin-top:5px;font-size:11px">Guion Veo 3.1 · 36 clips × 10 s · Sincronización de narración validada por word count · Junio 2026</p>
+  <p style="margin-top:5px;font-size:11px">Guion Veo 3.1 · 36 clips × 10 s · Prompts en inglés · Escenario: tech-real estate white office · Junio 2026</p>
 </footer>
 
 </body>
